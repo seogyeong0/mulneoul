@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450px">
+    <title>물너울</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <!--noto, poppin font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--aos 
+    -cdn 복사후 적용시킬 파일의 head 안에 붙여 넣어주세요.-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!--aos effect-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--aos css 연결-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--aos js 연결-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"
+        integrity="sha256-UezNdLBLZaG/YoRcr48I68gr8pb5gyTBM+di5P8p6t8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+    <!--css연결-->
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/special.css">
+</head>
+
+<body>
+    <header>
+        <div class="hd">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/logo.png" alt="물너울"></a>
+            </div><!--logo-->
+            <button class="hd_btn active">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button><!--hd_btn active-->
+        </div><!--hd-->
+        <nav class="menu_wrap">
+            <div class="menu_box">
+                <div class="menu_img">
+                    <ul class="menu_img_list">
+                        <li class="on"><img src="./image/main_menu_about.jpg" alt="메뉴배경1"></li>
+                        <li><img src="./image/main_menu_room.jpg" alt="메뉴배경2"></li>
+                        <li><img src="./image/main_menu_facility.jpg" alt="메뉴배경3"></li>
+                        <li><img src="./image/main_menu_reservation.jpg" alt="메뉴배경4"></li>
+                    </ul>
+                </div><!--menu_img-->
+                <div class="menu_txt">
+                    <dl class="menu_btn1">
+                        <dt class="menu_title F_serif"><a href="./about.html">01. <span class="F_blue">About
+                                    us</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./about.html">
+                                        물너울
+                                    </a></li>
+                                <li><a href="./tour.html">
+                                        주변여행지
+                                    </a></li>
+                                <li><a href="./about.html#4thPage">
+                                        오시는 길
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn2">
+                        <dt class="menu_title F_serif"><a href="./room1.html">02. <span class="F_blue">Room</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./room1.html">
+                                        물결
+                                    </a></li>
+                                <li><a href="./room2.html">
+                                        너울
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn3">
+                        <dt class="menu_title F_serif"><a href="./special.html">03. <span class="F_blue">Special
+                                    Offer</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./special.html#secondPage">
+                                        실내수영장
+                                    </a></li>
+                                <li><a href="./special.html#3rdPage">
+                                        바베큐
+                                    </a></li>
+                                <li><a href="./special.html#4thPage">
+                                        사우나
+                                    </a></li>
+                                <li><a href="./special.html#5thPage">
+                                        전기벽난로
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn4">
+                        <dt class="menu_title F_serif"><a href="./reservation.html#resv">04. <span
+                                    class="F_blue">Reservation</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./community.html">
+                                        공지사항 / 이용후기
+                                    </a></li>
+                                <li><a href="./reservation.html#resv">
+                                        실시간 예약
+                                    </a></li>
+                                <li><a href="./reservation.html">
+                                        EVENT
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div><!--menu_txt-->
+            </div><!--menu_box-->
+        </nav><!--menu_wrap-->
+    </header>
+    <div id="fullpage">
+        <div class="section sec1" id="section0">
+            <!-- Swiper -->
+            <div class="swiper special_banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./image/facility_b1.jpg" alt="메인이미지1">
+                        <div class="sp_txt">
+                            <p>물너울 만의 특별한 공간으로 초대합니다.</p>
+                            <h1>SWIMING POOL</h1>
+                        </div><!--sp_txt-->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/facility_b2.jpg" alt="메인이미지2">
+                        <div class="sp_txt">
+                            <p>물너울 만의 특별한 공간으로 초대합니다.</p>
+                            <h1>BARBEQUE</h1>
+                        </div><!--sp_txt-->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/facility_b3.jpg" alt="메인이미지3">
+                        <div class="sp_txt">
+                            <p>물너울 만의 특별한 공간으로 초대합니다.</p>
+                            <h1>SAUNA</h1>
+                        </div><!--sp_txt-->
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./image/facility_b4.jpg" alt="메인이미지4">
+                        <div class="sp_txt">
+                            <p>물너울 만의 특별한 공간으로 초대합니다.</p>
+                            <h1>ELECTRIC FIREPLACE</h1>
+                        </div><!--sp_txt-->
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div><!--facility_banner-->
+            <div id="special_title" data-aos="fade-up" data-aos-duration="800">
+                <h3 class="sub_title2">특별한 휴식 공간</h3>
+                <h1 class="F_serif title">Special Offer</h1>
+                <h2 class="sub_title1">물너울에서 제공하는 특별한 서비스를 누려보세요.</h2>
+            </div><!--special_title-->
+        </div>
+        <div class="section sec2" id="section1">
+            <div id="swiming_pool">
+                <div class="special_img1" data-aos="slide-right">
+                    <div class="swiper speical_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/pool1.png" alt="수영장1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/pool2.png" alt="수영장2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/pool3.png" alt="수영장3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/pool4.png" alt="수영장4">
+                            </div>
+                        </div>
+                    </div><!--speical_slide-->
+                </div><!--special_img1-->
+                <div class="special_text" data-aos="fade-up">
+                    <h1 class="special_title F_poppins">Swiming<br>
+                        Pool</h1>
+                    <h2 class="special_sub_title1">실내 수영장</h2>
+                    <p>특별한 날, 특별한 순간<br>
+                        사랑하는 사람들과 함께하는 시간 <br>
+                        특별한 공간에서 여행의 한순간을 느껴보세요.<br>
+                        지친 마음을 아늑하게 해줄 대형 온수풀이<br>
+                        여러분을 맞이하고 있습니다.</p>
+                    <h3 class="special_sub_title2">
+                        ※ 미온수 사용요금 포함되어 있습니다.<br>
+                        ※ 어린이 구명조끼 및 튜브를 상시 비치하고 있으니<br>
+                        반드시 착용후 입수 부탁드립니다.
+                    </h3>
+                </div><!--special_text-->
+            </div><!--swiming_pool-->
+        </div>
+        <div class="section sec3" id="section2">
+            <div id="bbq">
+                <div class="special_img2" data-aos="slide-left">
+                    <div class="swiper speical_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/bbq1.png" alt="바베큐1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/bbq2.png" alt="바베큐2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/bbq3.png" alt="바베큐3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/bbq4.png" alt="바베큐4">
+                            </div>
+                        </div>
+                    </div><!--speical_slide-->
+                </div><!--special_img2-->
+                <div class="special_text" data-aos="fade-up">
+                    <h1 class="special_title F_poppins">Barbeque</h1>
+                    <h2 class="special_sub_title1">바베큐</h2>
+                    <p>특별한 날, 특별한 순간<br>
+                        사랑하는사람들과 함께하는 시간<br>
+                        특별한 공간과 맛있는 음식과<br>
+                        여행의 마지막밤을 즐겨보세요.</p>
+                    <h3 class="special_sub_title2">
+                        ※ 바베큐에 필요한 모든 물건 제공합니다. (음식 제외)<br>
+                        ※ 사용자의 부주의로 인한 사고 발생시<br>
+                        펜션에서는 민사상/형사상 책임지지않습니다.
+                    </h3>
+                </div><!--special_text-->
+            </div><!--bbq-->
+        </div>
+        <div class="section sec4" id="section3">
+            <div id="sauna">
+                <div class="special_img1" data-aos="slide-right">
+                    <div class="swiper speical_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/sauna1.png" alt="사우나1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/sauna2.png" alt="사우나2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/sauna3.png" alt="사우나3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/sauna4.png" alt="사우나4">
+                            </div>
+                        </div>
+                    </div><!--speical_slide-->
+                </div><!--special_img1-->
+                <div class="special_text" data-aos="fade-up">
+                    <h1 class="special_title F_poppins">Sauna</h1>
+                    <h2 class="special_sub_title1">사우나</h2>
+                    <p>특별한 날, 특별한 순간<br>
+                        사랑하는사람들과 함께하는 시간<br>
+                        하루종일 피로에 지친 몸을<br>
+                        따뜻한 사우나에서 덥혀보세요.</p>
+                    <h3 class="special_sub_title2">
+                        ※ 이용가능시간 : 15시 ~ 20시<br>
+                        ※ 지나친 음주를 하신 경우 입장이 불가합니다.<br>
+                        ※ 임산부의 경우 입장하시지 않는 것을 권고합니다.
+                    </h3>
+                </div><!--special_text-->
+            </div><!--sauna-->
+        </div>
+        <div class="section sec5" id="section4">
+            <div id="fireplace">
+                <div class="special_img2" data-aos="slide-left">
+                    <div class="swiper speical_slide">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/fireplace1.png" alt="전기벽난로1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/fireplace2.png" alt="전기벽난로2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/fireplace3.png" alt="전기벽난로3">
+                            </div>
+                        </div>
+                    </div><!--speical_slide-->
+                </div><!--special_img2-->
+                <div class="special_text" data-aos="fade-up">
+                    <h1 class="special_title F_poppins">Electric<br>
+                        FirePlace</h1>
+                    <h2 class="special_sub_title1">전기벽난로</h2>
+                    <p>실내에서 편안한 휴식과 함께<br>
+                        캠핑감성을 느껴보세요.<br>
+                        장작 소리,이야기 소리,웃음 소리가<br>
+                        여러분의 추억을 새겨드립니다.</p>
+                    <h3 class="special_sub_title2">
+                        ※ 불이 붙기 쉬운 가연성 물질은 가까이 두지 않도록 주의합니다.<br>
+                        ※ 자리를 비우거나 사용 후에는 반드시 전원을 꺼주시길 바랍니다.
+                    </h3>
+                </div><!--special_text-->
+            </div><!--fireplace-->
+            <section>
+                <div class="back_wave">
+                    <div class="wave_in" id="wave1"></div>
+                    <div class="wave_in" id="wave2"></div>
+                    <div class="wave_in" id="wave3"></div>
+                    <div class="wave_in" id="wave4"></div>
+                </div>
+            </section>
+        </div>
+        <div class="section sec6 fp-auto-height" id="section4">
+            <div id="reservation">
+                <p>아늑하고 단정한 이곳에서의<br>
+                    여유롭고 편안한 휴식 시간</p>
+                <h1>나의 휴식처, 물너울</h1>
+                <a href="./reservation.html">
+                    실시간 예약
+                </a>
+            </div><!--reservation-->
+            <footer>
+                <div class="footer_gnb_wrap">
+                    <ul class="footer_gnb">
+                        <li><a href="./about.html">About us</a></li>
+                        <li><a href="./room1.html">Room</a></li>
+                        <li><a href="./special.html">Special Offer</a></li>
+                        <li><a href="./reservation.html">Reservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer_inner">
+                    <div class="footer_logo">
+                        <img src="./image/logo.png" alt="물너울 로고">
+                    </div><!--footer_logo-->
+                    <table>
+                        <tr>
+                            <th class="F_blue">INFOMATION </th>
+                            <td>대표자 : 정서경 / 연락처 : 010-000-0000</td>
+                        </tr>
+                        <tr>
+                            <th class="F_blue">ADDRESS </th>
+                            <td>부산광역시 기장군 기장읍 공수해안길 75</td>
+                        </tr>
+                        <tr>
+                            <th class="F_blue">BANK INFO </th>
+                            <td>국민 000-00-00000 (정서경)</td>
+                        </tr>
+                        <tr>
+                            <th class="F_blue">SNS </th>
+                            <td>
+                                <ul>
+                                    <li><a href="https://www.instagram.com/" class="sns_icon" target="_blank"><img
+                                                src="./image/icon_instagram.png" alt="인스타그램"></a>
+                                    </li>
+                                    <li><a href="https://ko-kr.facebook.com/" class="sns_icon" target="_blank"><img
+                                                src="./image/icon_facebook.png" alt="페이스북"></a>
+                                    </li>
+                                    <li><a href="https://www.youtube.com/" class="sns_icon" target="_blank"><img
+                                                src="./image/icon_youtube.png" alt="유튜브"></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                    </table>
+                </div><!--footer_inner-->
+            </footer>
+        </div>
+    </div>
+    <!--JS파일 연결-->
+    <script src="./js/common.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".special_banner", {
+            spaceBetween: 0,
+            effect: "fade",
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            speed: 500,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".speical_slide", {
+            spaceBetween: 30,
+            effect: "fade",
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            speed: 1000,
+            grabCursor: true,
+        });
+    </script>
+    <!--aos-->
+    <script>
+        AOS.init();
+        $('[data-aos]').each(function () { $(this).addClass("aos-init"); });
+
+        $(document).ready(function () {
+            $("#fullpage").fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['First page', 'Second page', 'Third page', 'Fourth', 'Fifth and last page'],
+                onLeave: function () {
+                    $('.section [data-aos]').each(function () {
+                        $(this).removeClass("aos-animate")
+                    });
+                },
+                onSlideLeave: function () {
+                    $('.slide [data-aos]').each(function () {
+                        $(this).removeClass("aos-animate")
+                    });
+                },
+                afterSlideLoad: function () {
+                    $('.slide.active [data-aos]').each(function () {
+                        $(this).addClass("aos-animate")
+                    });
+                },
+                afterLoad: function () {
+                    $('.section.active [data-aos]').each(function () {
+                        $(this).addClass("aos-animate")
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450px">
+    <title>물너울</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <!--noto, poppin font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--aos 
+    -cdn 복사후 적용시킬 파일의 head 안에 붙여 넣어주세요.-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!--css연결-->
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/tour.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="hd">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/logo.png" alt="물너울"></a>
+            </div><!--logo-->
+            <button class="hd_btn active">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button><!--hd_btn active-->
+        </div><!--hd-->
+        <nav class="menu_wrap">
+            <div class="menu_box">
+                <div class="menu_img">
+                    <ul class="menu_img_list">
+                        <li class="on"><img src="./image/main_menu_about.jpg" alt="메뉴배경1"></li>
+                        <li><img src="./image/main_menu_room.jpg" alt="메뉴배경2"></li>
+                        <li><img src="./image/main_menu_facility.jpg" alt="메뉴배경3"></li>
+                        <li><img src="./image/main_menu_reservation.jpg" alt="메뉴배경4"></li>
+                    </ul>
+                </div><!--menu_img-->
+                <div class="menu_txt">
+                    <dl class="menu_btn1">
+                        <dt class="menu_title F_serif"><a href="./about.html">01. <span class="F_blue">About
+                                    us</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./about.html">
+                                        물너울
+                                    </a></li>
+                                <li><a href="./tour.html">
+                                        주변여행지
+                                    </a></li>
+                                <li><a href="./about.html#4thPage">
+                                        오시는 길
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn2">
+                        <dt class="menu_title F_serif"><a href="./room1.html">02. <span class="F_blue">Room</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./room1.html">
+                                        물결
+                                    </a></li>
+                                <li><a href="./room2.html">
+                                        너울
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn3">
+                        <dt class="menu_title F_serif"><a href="./special.html">03. <span class="F_blue">Special
+                                    Offer</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./special.html#secondPage">
+                                        실내수영장
+                                    </a></li>
+                                <li><a href="./special.html#3rdPage">
+                                        바베큐
+                                    </a></li>
+                                <li><a href="./special.html#4thPage">
+                                        사우나
+                                    </a></li>
+                                <li><a href="./special.html#5thPage">
+                                        전기벽난로
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn4">
+                        <dt class="menu_title F_serif"><a href="./reservation.html#resv">04. <span
+                                    class="F_blue">Reservation</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./community.html">
+                                        공지사항 / 이용후기
+                                    </a></li>
+                                <li><a href="./reservation.html#resv">
+                                        실시간 예약
+                                    </a></li>
+                                <li><a href="./reservation.html">
+                                        EVENT
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div><!--menu_txt-->
+            </div><!--menu_box-->
+        </nav><!--menu_wrap-->
+    </header>
+    <div id="tour_banner">
+        <div class="tour_b">
+            <div class="tour_p">
+                <p class="F_serif">Busan Tour Guide</p>
+                <span></span>
+            </div>
+            <img src="./image/tour_b.jpg" alt="투어메인4">
+        </div><!--tour_b-->
+    </div><!--tour_banner-->
+    <div id="tour_box">
+        <div class="tour_box_inner">
+            <h3 class="sub_title2">물너울 주변 여행지</h3>
+            <h1 class="F_serif title">TOUR GUIDE</h1>
+            <h2 class="sub_title1">물너울 근처 다양하게 즐길 수 있는 장소들을 알려드립니다.</h2>
+            <img src="./image/wave_bg.png" alt="아랫선">
+        </div><!--tour_box_inner-->
+        <div class="tour_cardbox">
+            <div class="tour_card" data-aos="fade-up">
+                <div class="tape">
+                    <img src="./image/room_tape.png" alt="테이프">
+                </div>
+                <div class="tour_img">
+                    <div class="swiper tour_cardimg">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_1_1.jpg" alt="해동용궁사1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_1_2.jpg" alt="해동용궁사2">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination card_pag"></div>
+                    </div>
+                </div><!--tour_img-->
+                <div class="tour_txt">
+                    <p>
+                        #부산여행 #해동용궁사 #불교 #바다경치 #산사</p>
+                    <p> <b>@mulneoul_pool</b> 부산광역시 기장군 기장읍 용궁길 86<br>
+                        연중무휴 / 04:30~08:30<br>
+                        <a href="http://www.yongkungsa.or.kr" target="_blank">http://www.yongkungsa.or.kr</a>
+                    </p>
+                </div><!--tour_txt-->
+            </div><!--tour_card1-->
+            <div class="tour_card" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
+                <div class="tape">
+                    <img src="./image/room_tape.png" alt="테이프">
+                </div>
+                <div class="tour_img">
+                    <div class="swiper tour_cardimg">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_2_1.jpg" alt="죽성성당1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_2_2.jpg" alt="죽성성당2">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div><!--tour_img-->
+                <div class="tour_txt">
+                    <p>#죽성성당 #드림세트장 #드라이브코스 #바다경치</p>
+                    <p><b>@mulneoul_pool</b> 부산광역시 기장군 기장읍 죽성리 134-7<br>
+                        문의 및 안내 : 051-709-4082<br>
+                        <a href="https://www.visitbusan.net/kr/index.do"
+                            target="_blank">https://www.visitbusan.net/kr/index.do</a>
+                    </p>
+                </div><!--tour_txt-->
+            </div><!--tour_card2-->
+            <div class="tour_card" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
+                <div class="tape">
+                    <img src="./image/room_tape.png" alt="테이프">
+                </div>
+                <div class="tour_img">
+                    <div class="swiper tour_cardimg">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_3_1.jpg" alt="불꽃축제1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_3_2.jpg" alt="불꽃축제2">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div><!--tour_img-->
+                <div class="tour_txt">
+                    <p>#부산여행 #광안리 #드론라이트 #가족_친구와 함께</p>
+                    <p><b>@mulneoul_pool</b> 부산광역시 수영구 광안해변로 219<br>
+                        매주 토요일 2회 공연 - 동절기(10월~2월) 19시, 21시 / 무료<br>
+                        <a href="http://gwangallimdrone.co.kr" target="_blank">http://gwangallimdrone.co.kr</a>
+                    </p>
+                </div><!--tour_txt-->
+            </div><!--tour_card3-->
+            <div class="tour_card" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
+                <div class="tape">
+                    <img src="./image/room_tape.png" alt="테이프">
+                </div>
+                <div class="tour_img">
+                    <div class="swiper tour_cardimg">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_4_1.jpg" alt="양조장투어1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_4_2.jpg" alt="양조장투어2">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div><!--tour_img-->
+                <div class="tour_txt">
+                    <p>#부산 #브루어리_탐험대 #양조장투어 #수제맥주</p>
+                    <p><b>@mulneoul_pool</b> 부산광역시 부산진구 자유평화로 11 누리엔<br>
+                        매달 넷째 주 토요일 / ~23.11.25<br>
+                        <a href="https://booking.naver.com/booking/12/bizes/909217"
+                            target="_blank">https://booking.naver.com/booking/12/bizes/909217</a>
+                    </p>
+                </div><!--tour_txt-->
+            </div><!--tour_card4-->
+            <div class="tour_card" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
+                <div class="tape">
+                    <img src="./image/room_tape.png" alt="테이프">
+                </div>
+                <div class="tour_img">
+                    <div class="swiper tour_cardimg">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_5_1.jpg" alt="루지1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_5_2.jpg" alt="루지2">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div><!--tour_img-->
+                <div class="tour_txt">
+                    <p>#스카이라인루지 #오시리아 #친구와_함께</p>
+                    <p><b>@mulneoul_pool</b> 부산광역시 기장군 기장읍 기장해안로 205<br>
+                        문의 : 051-722-5002<br>
+                        <a href="https://www.skylineluge.kr/" target="_blank">https://www.skylineluge.kr/</a>
+                    </p>
+                </div><!--tour_txt-->
+            </div><!--tour_card5-->
+            <div class="tour_card" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
+                <div class="tape">
+                    <img src="./image/room_tape.png" alt="테이프">
+                </div>
+                <div class="tour_img">
+                    <div class="swiper tour_cardimg">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_6_1.jpg" alt="스카이라인1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_6_2.jpg" alt="스카이라인2">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div><!--tour_img-->
+                <div class="tour_txt">
+                    <p>#해운대_블루라인파크 #부산경치 #연인과_함께</p>
+                    <p><b>@mulneoul_pool</b> 부산광역시 해운대구 청사포로 116<br>
+                        ※ 정거장에 따라 이용시간 다르므로 아래 홈페이지 참조<br>
+                        <a href="https://www.bluelinepark.com/traintime.do"
+                            target="_blank">https://www.bluelinepark.com/traintime.do</a>
+                    </p>
+                </div><!--tour_txt-->
+            </div><!--tour_card6-->
+            <div class="tour_card" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
+                <div class="tape">
+                    <img src="./image/room_tape.png" alt="테이프">
+                </div>
+                <div class="tour_img">
+                    <div class="swiper tour_cardimg">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_7_1.jpg" alt="아홉산숲1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_7_2.jpg" alt="아홉산숲2">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div><!--tour_img-->
+                <div class="tour_txt">
+                    <p>#아홉산숲 #힐링 #숲속체험 #자연 #부산경치</p>
+                    <p><b>@mulneoul_pool</b> 부산광역시 기장군 철마면 미동길 37-1<br>
+                        연중무휴 / 09~18시 (입장마감 16:30) /<br>
+                        <a href="http://www.ahopsan.com/" target="_blank">http://www.ahopsan.com/</a>
+                    </p>
+                </div><!--tour_txt-->
+            </div><!--tour_card7-->
+            <div class="tour_card" data-aos="fade-up" data-aos-offset="500" data-aos-duration="500">
+                <div class="tape">
+                    <img src="./image/room_tape.png" alt="테이프">
+                </div>
+                <div class="tour_img">
+                    <div class="swiper tour_cardimg">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_8_1.jpg" alt="케이블카1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/tour_card_8_2.jpg" alt="케이블카2">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div><!--tour_img-->
+                <div class="tour_txt">
+                    <p>#송도해상케이블카 #야간관광100선 #바다경치</p>
+                    <p><b>@mulneoul_pool</b> 부산광역시 서구 송도해변로 171<br>
+                        09:00~ 21:00 / 연중무휴<br>
+                        <a href="http://busanaircruise.co.kr/" target="_blank">http://busanaircruise.co.kr/</a>
+                    </p>
+                </div><!--tour_txt-->
+            </div><!--tour_card8-->
+
+        </div><!--tour_cardbox-->
+    </div><!--tour_box-->
+    <div id="reservation">
+        <p>아늑하고 단정한 이곳에서의<br>
+            여유롭고 편안한 휴식 시간</p>
+        <h1>나의 휴식처, 물너울</h1>
+        <a href="./reservation.html">
+            실시간 예약
+        </a>
+    </div><!--reservation-->
+    <footer>
+        <div class="footer_gnb_wrap">
+            <ul class="footer_gnb">
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./room1.html">Room</a></li>
+                <li><a href="./special.html">Special Offer</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+            </ul>
+        </div>
+        <div class="footer_inner">
+            <div class="footer_logo">
+                <img src="./image/logo.png" alt="물너울 로고">
+            </div><!--footer_logo-->
+            <table>
+                <tr>
+                    <th class="F_blue">INFOMATION </th>
+                    <td>대표자 : 정서경 / 연락처 : 010-000-0000</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">ADDRESS </th>
+                    <td>부산광역시 기장군 기장읍 공수해안길 75</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">BANK INFO </th>
+                    <td>국민 000-00-00000 (정서경)</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">SNS </th>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.instagram.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_instagram.png" alt="인스타그램"></a>
+                            </li>
+                            <li><a href="https://ko-kr.facebook.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_facebook.png" alt="페이스북"></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_youtube.png" alt="유튜브"></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr></tr>
+            </table>
+        </div><!--footer_inner-->
+    </footer>
+
+    <!--JS파일 연결-->
+    <script src="./js/common.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".tour_cardimg", {
+            spaceBetween: 30,
+            effect: "fade",
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            speed: 1000,
+            grabCursor: true,
+        });
+    </script>
+    <!--aos-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

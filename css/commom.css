@@ -1,0 +1,425 @@
+@charset "utf-8";
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2e2d2c;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+img,
+video {
+    max-width: 100%;
+}
+
+a,
+button,
+input {
+    box-shadow: none;
+    border: 0;
+    background-color: transparent;
+}
+
+b {
+    font-weight: 500;
+}
+
+body {
+    color: #2e2d2c;
+    background-color: #fff;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    min-width: 1450px;
+}
+
+.F_serif {
+    font-family: 'Noto Serif KR';
+}
+
+.F_poppins {
+    font-family: 'Poppins'
+}
+
+.title {
+    font-size: 48px;
+    line-height: 60px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.sub_title1 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-bottom: 50px;
+}
+
+.sub_title2 {
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 100px;
+}
+
+/*===header===*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    margin: 0 auto;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.hd {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 90px;
+    align-items: center;
+    max-width: 1620px;
+    margin: 0 auto;
+}
+
+
+.hd .logo {
+    z-index: 900;
+    width: 120px;
+}
+
+.hd .hd_btn {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    z-index: 900;
+}
+
+.hd .hd_btn .bar {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #0083b9;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+
+.hd .hd_btn.active .bar:first-child {
+    transform: translateY(-5px);
+    transition: 0.8s;
+}
+
+.hd .hd_btn.active .bar:last-child {
+    transform: translateY(5px);
+    width: 60%;
+    transition: 0.8s;
+}
+
+.hd .hd_btn .bar:first-child {
+    transform: rotate(45deg);
+    transition: 0.8s;
+}
+
+.hd .hd_btn .bar:last-child {
+    transform: rotate(-45deg);
+    width: 100%;
+    transition: 0.8s;
+}
+
+.menu_wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.8s;
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 200px;
+    background: url(../image/menu_bg.jpg) center top no-repeat;
+}
+
+.menu_wrap.active {
+    visibility: visible;
+    opacity: 1;
+    transition: linear all 0.8;
+    top: 0;
+    left: 0;
+}
+
+.menu_wrap .menu_box {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.menu_wrap .menu_box .menu_img {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 0;
+}
+
+.menu_wrap .menu_box .menu_img .menu_img_list {
+    position: relative;
+    max-width: 500px;
+}
+
+.menu_wrap .menu_box .menu_img .menu_img_list li {
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+.menu_wrap .menu_box .menu_img .menu_img_list li.on {
+    opacity: 1;
+    z-index: 20;
+}
+
+.menu_wrap .menu_box .menu_txt {
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    top: 25px;
+    right: 0;
+}
+
+.F_blue {
+    color: #0083b9;
+}
+
+.menu_wrap .menu_box .menu_txt .menu_title {
+    font-size: 35px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.menu_wrap .menu_box .menu_txt dl dd {
+    padding-bottom: 60px;
+}
+
+.menu_wrap .menu_box .menu_txt .menu_sub_title {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 26px;
+    line-height: 36px;
+    letter-spacing: 0;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    padding-left: 70px;
+    padding-top: 10px;
+}
+
+.menu_wrap .menu_box .menu_txt .menu_sub_title>li {
+    padding-right: 50px;
+}
+
+/*===reservation===*/
+#reservation {
+    padding: 40px 0;
+    text-align: center;
+    background: url(../image/rev_bg.jpg) center top fixed;
+    color: #fff;
+}
+
+#reservation p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 300;
+}
+
+#reservation h1 {
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+#reservation a {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 3px solid #fff;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+}
+
+#reservation a:hover {
+    transition: all 0.5s;
+    color: #0083b9;
+    border: #0083b9 3px solid;
+    background-color: #f6f6f6;
+}
+
+/*===footer===*/
+footer {
+    background-color: #f1dec8;
+}
+
+.footer_gnb_wrap {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2)
+}
+
+.footer_gnb_wrap .footer_gnb {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer_gnb_wrap .footer_gnb li {
+    padding: 20px 40px;
+    font-size: 22px;
+}
+
+.footer_inner {
+    width: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+.footer_inner .footer_logo {
+    padding-top: 20px;
+    width: 20%;
+}
+
+.footer_inner table {
+    width: 70%;
+}
+
+.footer_inner table tr th {
+    width: 30%;
+    vertical-align: middle;
+    text-align: left;
+}
+
+.footer_inner table tr td {
+    width: 70%;
+    padding-left: 10px;
+}
+
+.footer_inner table tr td ul {
+    display: flex;
+}
+
+.footer_inner table tr td ul li {
+    width: 60px;
+    height: 60px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.footer_inner table tr td ul li a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #0083b9;
+    color: #0083b9;
+    text-align: center;
+    position: relative;
+}
+
+.footer_inner table tr td ul li a:hover {
+    background-color: #f6f6f6;
+    transition: all 0.3s;
+}
+
+.footer_inner table tr td ul li a img {
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media (min-width:1450px) and (max-width:1619px) {
+    .hd {
+        width: 90%;
+    }
+
+    .menu_wrap .menu_box {
+        width: 100%;
+    }
+
+    .about_inner {
+        width: 100%
+    }
+
+    #room .room_inner {
+        width: 100%;
+    }
+
+    #room .room_wrap {
+        width: 100%;
+    }
+
+    #special .special_inner {
+        width: 100%;
+    }
+
+    #gallery .gallery_txt {
+        width: 100%;
+    }
+
+    #gallery .gallery_img {
+        width: 100%;
+    }
+
+    .way_inner {
+        width: 100%;
+    }
+
+    .footer_gnb_wrap .footer_gnb {
+        width: 100%;
+    }
+
+    #tour_box .tour_box_inner {
+        width: 100%;
+    }
+
+    #tour_box .tour_cardbox {
+        width: 100%;
+    }
+}

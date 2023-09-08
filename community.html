@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450px">
+    <title>물너울</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <!--noto, poppin font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--aos 
+    -cdn 복사후 적용시킬 파일의 head 안에 붙여 넣어주세요.-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!--css연결-->
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/community.css">
+    <!--JS파일 연결-->
+    <script src="./js/common.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="hd">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/logo.png" alt="물너울"></a>
+            </div><!--logo-->
+            <button class="hd_btn active">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button><!--hd_btn active-->
+        </div><!--hd-->
+        <nav class="menu_wrap">
+            <div class="menu_box">
+                <div class="menu_img">
+                    <ul class="menu_img_list">
+                        <li class="on"><img src="./image/main_menu_about.jpg" alt="메뉴배경1"></li>
+                        <li><img src="./image/main_menu_room.jpg" alt="메뉴배경2"></li>
+                        <li><img src="./image/main_menu_facility.jpg" alt="메뉴배경3"></li>
+                        <li><img src="./image/main_menu_reservation.jpg" alt="메뉴배경4"></li>
+                    </ul>
+                </div><!--menu_img-->
+                <div class="menu_txt">
+                    <dl class="menu_btn1">
+                        <dt class="menu_title F_serif"><a href="./about.html">01. <span class="F_blue">About
+                                    us</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./about.html">
+                                        물너울
+                                    </a></li>
+                                <li><a href="./tour.html">
+                                        주변여행지
+                                    </a></li>
+                                <li><a href="./about.html#4thPage">
+                                        오시는 길
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn2">
+                        <dt class="menu_title F_serif"><a href="./room1.html">02. <span class="F_blue">Room</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./room1.html">
+                                        물결
+                                    </a></li>
+                                <li><a href="./room2.html">
+                                        너울
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn3">
+                        <dt class="menu_title F_serif"><a href="./special.html">03. <span class="F_blue">Special
+                                    Offer</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./special.html#secondPage">
+                                        실내수영장
+                                    </a></li>
+                                <li><a href="./special.html#3rdPage">
+                                        바베큐
+                                    </a></li>
+                                <li><a href="./special.html#4thPage">
+                                        사우나
+                                    </a></li>
+                                <li><a href="./special.html#5thPage">
+                                        전기벽난로
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn4">
+                        <dt class="menu_title F_serif"><a href="./reservation.html#resv">04. <span
+                                    class="F_blue">Reservation</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./community.html">
+                                        공지사항 / 이용후기
+                                    </a></li>
+                                <li><a href="./reservation.html#resv">
+                                        실시간 예약
+                                    </a></li>
+                                <li><a href="./reservation.html">
+                                        EVENT
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div><!--menu_txt-->
+            </div><!--menu_box-->
+        </nav><!--menu_wrap-->
+    </header>
+    <div id="commu_banner">
+        <h1>COMMUNITY</h1>
+    </div><!--commu_banner-->
+    <!--탭 메뉴 영역 -->
+    <div id="wrapper">
+        <!--탭 메뉴 영역 -->
+        <div class="tap_box">
+            <ul class="tabs">
+                <li><a href="#tab1">공지사항</a></li>
+                <li><a href="#tab2">이용후기</a></li>
+            </ul>
+        </div><!--tap_box-->
+        <!--탭 콘텐츠 영역 -->
+        <div class="tab_container">
+            <div id="tab1" class="tab_content">
+                <!--Content-->
+                <h1>공지사항</h1>
+                <h2>물너울 풀빌라의 각종 소식에 대한 내용을 안내해 드립니다.</h2>
+                <div class="search_box">
+                    <select class="select1">
+                        <option>선택</option>
+                        <option>제목</option>
+                        <option>작성자</option>
+                        <option>내용</option>
+                    </select>
+                    <p><input type="search" class="search" placeholder="Search"> <button type="submit"
+                            class="button1">검색</button></p>
+                </div><!--search_box-->
+                <table>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>등록일</th>
+                        <th>조회수</th>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="#none">2023년 개인 풀빌라 이용 안내</a>
+                        </td>
+                        <td>물너울</td>
+                        <td>23.05.17</td>
+                        <td>211</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="#none">물너울 풀빌라 오픈 안내</a></td>
+                        <td>물너울</td>
+                        <td>23.05.17</td>
+                        <td>89</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="tab2" class="tab_content">
+                <!--Content-->
+                <h1>이용후기</h1>
+                <h2>베스트 리뷰 선정 시 소정의 사은품을 보내드립니다.</h2>
+                <div class="search_box">
+                    <select class="select1">
+                        <option>선택</option>
+                        <option>제목</option>
+                        <option>작성자</option>
+                        <option>내용</option>
+                    </select>
+                    <p><input type="search" class="search" placeholder="Search"> <button type="submit"
+                            class="button1">검색</button></p>
+                </div><!--search_box-->
+                <table>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>등록일</th>
+                        <th>조회수</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p class="bottom_btn"><button type="submit" class="button2">글쓰기</button></p>
+            </div>
+        </div><!--tab_container-->
+    </div><!--wrapper-->
+    <div id="reservation">
+        <p>아늑하고 단정한 이곳에서의<br>
+            여유롭고 편안한 휴식 시간</p>
+        <h1>나의 휴식처, 물너울</h1>
+        <a href="./reservation.html">
+            실시간 예약
+        </a>
+    </div><!--reservation-->
+    <footer>
+        <div class="footer_gnb_wrap">
+            <ul class="footer_gnb">
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./room1.html">Room</a></li>
+                <li><a href="./special.html">Special Offer</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+            </ul>
+        </div>
+        <div class="footer_inner">
+            <div class="footer_logo">
+                <img src="./image/logo.png" alt="물너울 로고">
+            </div><!--footer_logo-->
+            <table>
+                <tr>
+                    <th class="F_blue">INFOMATION </th>
+                    <td>대표자 : 정서경 / 연락처 : 010-000-0000</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">ADDRESS </th>
+                    <td>부산광역시 기장군 기장읍 공수해안길 75</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">BANK INFO </th>
+                    <td>국민 000-00-00000 (정서경)</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">SNS </th>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.instagram.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_instagram.png" alt="인스타그램"></a>
+                            </li>
+                            <li><a href="https://ko-kr.facebook.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_facebook.png" alt="페이스북"></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_youtube.png" alt="유튜브"></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr></tr>
+            </table>
+        </div><!--footer_inner-->
+    </footer>
+
+    <!--제이쿼리 라이브러리파일-->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <!--탭 제이쿼리-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //처음들어갔을때 모습 만들기...
+            $(".tab_content").hide(); //tab_content 부분을 모두 숨김.
+            $("ul.tabs li:first").addClass("active").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+            $(".tab_content:first").show(); //tab_contents중 첫번째꺼를 보여줌
+
+            //On Click Event
+            $("ul.tabs li").click(function () {
+
+                $("ul.tabs li").removeClass("active"); //Remove any "active" class
+                $(this).addClass("active"); //선택한 탭에만 active클래스 붙임
+                $(".tab_content").hide(); //모든 contents들 숨김
+
+                var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+                /*.attr( attributeName ) -> 선택한 요소의 속성의 값을 가져옵니다.
+                .find()는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.*/
+                $(activeTab).fadeIn(); //Fade in the active ID content(active되어있는 칸의 id 값을 가진 부분이 나타남)
+                return false;
+            });
+
+        });
+    </script>
+</body>
+
+</html>

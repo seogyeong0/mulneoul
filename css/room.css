@@ -1,0 +1,345 @@
+/*======room_page======*/
+#room_banner {
+    margin-top: 90px;
+    height: 680px;
+    position: relative;
+    overflow: hidden;
+}
+
+#room_banner .room_b_img img {
+    animation: small 0.5s linear;
+}
+
+@keyframes small {
+    0% {
+        transform: scale(1.3);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.room_b_img img {
+    animation: small 0.5s linear;
+}
+
+#room_banner .room_b_txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #f6f6f6;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#room_banner .room_b_txt h1 {
+    font-size: 80px;
+    line-height: 100%;
+    letter-spacing: -2px;
+    padding-bottom: 20px;
+}
+
+#room_banner .room_b_txt p {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+/*room_content*/
+#room_content {
+    width: 1320px;
+    margin: 0 auto;
+    text-align: center;
+    height: 200px;
+    padding: 50px 0;
+}
+
+#room_content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 100%;
+    padding-bottom: 20px;
+}
+
+#room_content p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 100%;
+}
+
+
+/*room_info*/
+#room_info {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 0;
+}
+
+.room_img {
+    width: 700px;
+    position: relative;
+}
+
+.room_img .bigger {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.room_txt {
+    width: 570px;
+}
+
+.room_txt span {
+    font-weight: 700;
+}
+
+.room_txt h1 {
+    font-size: 60px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.room_txt .room_icon_wrap {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.room_txt .room_icon_wrap .room_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.room_txt .room_icon_wrap .room_icon .middle {
+    padding: 20px 0;
+}
+
+.room_txt .bottom p {
+    padding-bottom: 10px;
+}
+
+/*room_notice*/
+#room_notice {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.room_title {
+    overflow: hidden;
+    padding: 20px 20px;
+    border-bottom: 1px solid #0083b9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.title_in {
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+.plus {
+    margin-right: 10px;
+}
+
+.text_info {
+    padding: 20px 10px;
+    display: none;
+    line-height: 30px;
+}
+
+/*+모양 회전관련 속성. 요부분은 반드시 복사해서 가져가세요~*/
+.turn .room_title img {
+    transform: rotate(45deg);
+}
+
+.plus img {
+    transition: transform 0.5s;
+}
+
+/*room_slide*/
+#room_slide {
+    width: 1320px;
+    margin: 0 auto;
+    height: 970px;
+    padding: 100px 0;
+
+}
+
+.room_slide_big {
+    height: 80%;
+    width: 100%;
+}
+
+.room_slide_small {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.room_slide_small .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+}
+
+.room_slide_small .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.room_next,
+.room_prev {
+    color: #2e2d2c;
+}
+
+/*room_card*/
+#room_card {
+    width: 100%;
+    height: 700px;
+    display: flex;
+}
+
+#room_card .room_inner {
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #2e2d2c;
+    border-left: none;
+}
+
+#room_card .room_inner>a {
+    display: block;
+    background-color: #f1dec8;
+    width: 100%;
+    height: 100%;
+}
+
+#room_card .room_inner .room_in {
+    margin: auto;
+    text-align: center;
+}
+
+#room_card .room_inner .room_in>img {
+    width: 350px;
+    height: 200px;
+    margin-top: 100px;
+}
+
+#room_card .room_inner .room_in h2 {
+    padding: 30px 0;
+    font-size: 50px;
+    line-height: 100%;
+    font-weight: 500;
+}
+
+#room_card .room_inner .room_in h4 {
+    display: inline-block;
+    margin-top: 45px;
+    padding: 10px 30px;
+    border: 1px solid #0083b9;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#room_card .room_inner .room_out {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+#room_card .room_inner .room_out>img {
+    height: 700px;
+}
+
+#room_card .room_inner .room_out h2 {
+    position: absolute;
+    left: 50%;
+    top: 530px;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 50px;
+    line-height: 100%;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 3px #2e2d2c;
+    animation: down 0.5s linear;
+}
+
+@keyframes down {
+    0% {
+        color: #2e2d2c;
+        top: 330px;
+    }
+
+    100% {
+        color: #fff;
+        top: 530px;
+    }
+}
+
+#room_card .room_inner .room_out p {
+    position: absolute;
+    left: 50%;
+    bottom: 70px;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 0 3px #2e2d2c;
+    font-size: 20px;
+    animation: up 0.5s linear;
+}
+
+@keyframes up {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+
+    100% {
+        bottom: 70px;
+        opacity: 1;
+    }
+}
+
+#room_card .room_inner .room_out p>img {
+    width: 20px;
+}
+
+#room_card .room_inner:hover .room_out {
+    display: block;
+    transition: 0.5s all;
+}
+
+#room_card .room_inner:hover .room_out>img {
+    animation: small 0.5s linear;
+}
+
+@keyframes small {
+    0% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}

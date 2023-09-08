@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450px">
+    <title>물너울</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <!--noto, poppin font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--aos 
+    -cdn 복사후 적용시킬 파일의 head 안에 붙여 넣어주세요.-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!--JS파일 연결-->
+    <script src="./js/common.js"></script>
+    <!--달력 연결-->
+    <link rel="stylesheet" href="./css/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js">
+    </script>
+    <!--css연결-->
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/reservation.css">
+</head>
+
+<body>
+    <header>
+        <div class="hd">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/logo.png" alt="물너울"></a>
+            </div><!--logo-->
+            <button class="hd_btn active">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button><!--hd_btn active-->
+        </div><!--hd-->
+        <nav class="menu_wrap">
+            <div class="menu_box">
+                <div class="menu_img">
+                    <ul class="menu_img_list">
+                        <li class="on"><img src="./image/main_menu_about.jpg" alt="메뉴배경1"></li>
+                        <li><img src="./image/main_menu_room.jpg" alt="메뉴배경2"></li>
+                        <li><img src="./image/main_menu_facility.jpg" alt="메뉴배경3"></li>
+                        <li><img src="./image/main_menu_reservation.jpg" alt="메뉴배경4"></li>
+                    </ul>
+                </div><!--menu_img-->
+                <div class="menu_txt">
+                    <dl class="menu_btn1">
+                        <dt class="menu_title F_serif"><a href="./about.html">01. <span class="F_blue">About
+                                    us</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./about.html">
+                                        물너울
+                                    </a></li>
+                                <li><a href="./tour.html">
+                                        주변여행지
+                                    </a></li>
+                                <li><a href="./about.html#4thPage">
+                                        오시는 길
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn2">
+                        <dt class="menu_title F_serif"><a href="./room1.html">02. <span class="F_blue">Room</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./room1.html">
+                                        물결
+                                    </a></li>
+                                <li><a href="./room2.html">
+                                        너울
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn3">
+                        <dt class="menu_title F_serif"><a href="./special.html">03. <span class="F_blue">Special
+                                    Offer</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./special.html#swiming_pool">
+                                        실내수영장
+                                    </a></li>
+                                <li><a href="./special.html#bbq">
+                                        바베큐
+                                    </a></li>
+                                <li><a href="./special.html#sauna">
+                                        사우나
+                                    </a></li>
+                                <li><a href="./special.html#fireplace">
+                                        전기벽난로
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn4">
+                        <dt class="menu_title F_serif"><a href="./reservation.html#resv">04. <span
+                                    class="F_blue">Reservation</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./community.html">
+                                        공지사항 / 이용후기
+                                    </a></li>
+                                <li><a href="./reservation.html#resv">
+                                        실시간 예약
+                                    </a></li>
+                                <li><a href="./reservation.html">
+                                        EVENT
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div><!--menu_txt-->
+            </div><!--menu_box-->
+        </nav><!--menu_wrap-->
+    </header>
+    <div id="resv_banner">
+        <div class="resv_b" data-aos="fade-left" data-aos-duration="800">
+            <span>꿈에<br>
+                그리던<br>
+                나만의 휴가
+            </span>
+        </div>
+    </div><!--resv_banner-->
+    <!--탭 메뉴 영역 -->
+    <div id="wrapper">
+        <!--탭 메뉴 영역 -->
+        <div class="tap_box">
+            <ul class="tabs">
+                <li><a href="#event">EVENT</a></li>
+                <li><a href="#resv">RESERVATION</a></li>
+            </ul>
+        </div><!--tap_box-->
+        <!--탭 콘텐츠 영역 -->
+        <div class="tab_container">
+            <div id="event" class="tab_content">
+                <!--Content-->
+                <h1>EVENT</h1>
+                <h2>물너울 풀빌라에서 진행되는 다양한 혜택을 지금 만나보세요</h2>
+                <div class="event_b">
+                    <a href="./community.html#tab2"><img src="./image/event_b.jpg" alt="리뷰이벤트"></a>
+                </div><!--event_b-->
+                <div class="event_card">
+                    <dl>
+                        <dt><a href="#none"><img src="./image/event3.jpg" alt="10월 프로모션"></a></dt>
+                        <dd><a href="#none">
+                                <p>10월 프로모션 이벤트 <span><img src="./image/icon_park.png" alt="공원사진"></span></p>
+                                <p><span class="F_blue">View</span> <span><img src="./image/next_btn.png" alt="자세히보기"
+                                            class="move_right"></span></p>
+                            </a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#none"><img src="./image/event2.jpg" alt="해시태그 이벤트"></a></dt>
+                        <dd><a href="#none">
+                                <p>[EVENT] 해시태그 이벤트</p>
+                                <p><span class="F_blue">View</span> <span><img src="./image/next_btn.png" alt="자세히보기"
+                                            class="move_right"></span></p>
+                            </a></dd>
+                    </dl>
+                    <dl>
+                        <dt><a href="#none"><img src="./image/event1.jpg" alt="웰컴박스 이벤트"></a></dt>
+                        <dd>
+                            <a href="#none">
+                                <p>[EVENT] WELCOME BOX 증정</p>
+                                <p><span class="F_blue">View</span> <span><img src="./image/next_btn.png" alt="자세히보기"
+                                            class="move_right"></span></p>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div id="resv" class="tab_content">
+                <div class="resv_box1">
+                    <h1>물너울 독채 풀빌라</h1>
+                    <table>
+                        <tr>
+                            <th>주소</th>
+                            <td>부산광역시 기장군 기장읍 공수해안길 75</td>
+                        </tr>
+                        <tr>
+                            <th>연락처</th>
+                            <td>010-8613-9406</td>
+                        </tr>
+                        <tr>
+                            <th>결제방법</th>
+                            <td>카드 / 무통장 (국민:123456-12-123456)</td>
+                        </tr>
+                    </table>
+                </div><!--resv_box1-->
+                <div class="resv_box2">
+                    <h1>숙박기간</h1>
+                    <div class="resv_time">
+                        <ul>
+                            <li><img src="./image/icon_calender.png" alt="달력 아이콘"></li>
+                            <li>
+                                <p><span>입실일</span><input type="text" id="datepicker1" value=""></p>
+                            </li>
+                            <li>
+                                <p><span>퇴실일</span><input type="text" id="datepicker2" value=""></p>
+                            </li>
+                        </ul>
+                    </div><!--resv_time-->
+                </div><!--resv_box2-->
+                <div class="resv_box3">
+                    <h1>객실 선택</h1>
+                    <div class="resv_room">
+                        <div class="resv_room1">
+                            <img src="./image/room_card1.jpg" alt="물결 방 이미지">
+                        </div>
+                        <div class="resv_room2">
+                            <h5>예약가능</h5>
+                            <h3>1. 물결 (방2/화2/미온수 수영장/사우나/바베큐)</h3>
+                            <p>기준 4명, 최대 8명</p>
+                            <p>거실 + 객실 / 70평</p>
+                        </div>
+                        <div class="resv_room3">
+                            <div class="quantity">
+                                <p>성인</p>
+                                <div class="numb_box">
+                                    <input type="number" min="1" max="4" step="1" value="1">
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <p>아동</p>
+                                <div class="numb_box">
+                                    <input type="number" min="1" max="4" step="1" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resv_room4">
+                            <input type="button" class="resv_btn1" value="선택">
+                            <h2>599,000원</h2>
+                        </div>
+                    </div><!--resv_room-->
+                    <div class="resv_room bottom_line">
+                        <div class="resv_room1">
+                            <img src="./image/room_card2.jpg" alt="너울 방 이미지">
+                        </div>
+                        <div class="resv_room2">
+                            <h5>예약가능</h5>
+                            <h3>2. 너울 (방2/화2/미온수 수영장/바베큐)</h3>
+                            <p>기준 4명, 최대 8명</p>
+                            <p>거실 + 객실 / 60평</p>
+                        </div>
+                        <div class="resv_room3">
+                            <div class="quantity">
+                                <p>성인</p>
+                                <div class="numb_box">
+                                    <input type="number" min="1" max="4" step="1" value="1">
+                                </div>
+                            </div>
+                            <div class="quantity">
+                                <p>아동</p>
+                                <div class="numb_box">
+                                    <input type="number" min="1" max="4" step="1" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resv_room4">
+                            <input type="button" class="resv_btn2" value="선택">
+                            <h2>499,000원</h2>
+                        </div>
+                    </div><!--resv_room-->
+                    <div class="resv_total">
+                        <div class="total_inner">
+                            <h2>총 결제금액 : <input type="text" id="total_cash" value="0">원
+                            </h2>
+                            <input type="submit" value="결제하기">
+                        </div>
+                        <p>* 기준인원(4명) 까지만 예약이 가능하고 초과인원에 대해서는 현장에 도착하여 추가요금을 납부 하셔야 합니다. <br>
+                            (초과인원은 최대인원 이내까지만 추가 가능) </p>
+                    </div>
+                </div><!--resv_box3-->
+                <div class="resv_box4">
+                    <div class="resv_left">
+                        <h1>예약안내</h1>
+                        <p>
+                            <b>예약 시 안내문구, 환불규정을 숙지하시고 예약하시기 바랍니다.</b><br>
+                            1) 입금대기시간이 경과되면 자동으로 예약신청이 취소됩니다. <br>
+                            2) 입금 시 반드시 예약자명으로 입금해주셔야 확인가능하며, 입금자명이 다를 경우 반드시 펜션으로 연락 주셔야 합니다. <br>
+                            3) 저희 리조트는 만 20세 이상 예약 가능합니다.<br>
+                            4) 미성년자는 보호자의 동행 없이는 투숙이 불가하며 적발시 환불없이 퇴실조치합니다.
+                        </p>
+                        <p>
+                            <b>입금 계좌</b><br>
+                            국민은행 123456-12-123456 정서경
+                        </p>
+                        <p>
+                            <b>예약문의</b><br>
+                            010-8613-9406
+                        </p>
+                        <p>
+                            <b>입금</b><br>
+                            예약 신청 후 이용 금액 전액을 입금하셔야 예약이 완료됩니다.<br>
+                            1) 12시간 내 입금자 : 예약 완료 / 12시간 이내 미입금자 : 예약 취소<br>
+                            2) 단, 당일, 1일전, 2일 전 예약은 1시간 내 결제를 완료하셔야 예약이 완료됩니다.<br>
+                            3) 카드결제 및 무통장 입금 확인 후 '예약확정 문자메시지'를 보내드립니다.<br>
+                            4) 정해진 시간 내 입금확인이 되지 않을 경우 시스템에 의해 자동 취소되며 별도 연락은 드리지 않습니다.<br>
+                            5) 예약일의 변경은 '예약 취소'에 해당하며, 전화를 통한 예약 취소 후 변경 날짜로 다시 예약해주시기 바랍니다.<br>
+                            6) 카드 결제 후 예약 취소 시에는 카드 결제시 발생하는 수수료를 아래 환불 규정 위약금에 추가로 부과합니다. <br>
+                            카드 결제시 다시 한번 신중한 선택을 바랍니다.
+                        </p>
+                        <p>
+                            <b>기준인원 초과금액</b><br>
+                            성인 : 30,000원<br>
+                            아동 : 30,000원
+                        </p>
+                        <p>
+                            <b>* 추가요금 (현장결제)</b><br>
+                            - 인원추가요금 기준인원 초과시 인원추가요금이 발생됩니다.<br>
+                            1인 : 30,000 원 / 박당 (12개월 미만 1명까지 무료)
+                        </p>
+                        <p>
+                            <b>* 수영장 미온수 주의사항</b><br>
+                            - 미온수는 입실 당일 밤 9시까지 1회만 사용 가능
+                        </p>
+                        <p>
+                            <b>* 바베큐 숯+그릴 주의사항</b><br>
+                            - 가정(외부)에서 가져오신 버너 / 전기그릴 / 에어프라이기 등 개인화기 절대 사용불가
+                        </p>
+                    </div>
+                    <div class="resv_right">
+                        <h1>이용안내</h1>
+                        <p><b>입실시간 : 15시~22시</b><br>
+                            <b>퇴실시간 : 11시 / 퇴실 전 매니저에게 체크아웃 요청을 해주시기 바랍니다.</b>
+                        </p>
+                        <p>( 12:00 ~ 15:00까지는 객실 정리 시간입니다. 입실 허용시간 이전에 도착하셔도 입실 하실 수 없습니다.) </p>
+                        <p>** 22시 이후 입실 고객님께서는 사전에 미리 연락 주시기 바랍니다. <br>
+                            010-8613-9406</p>
+                        <p>
+                            1) 보호자를 동반하지 않은 미성년자는 어떠한 경우에도 입실하실 수 없습니다. (동의서로 불가능하며 적발시 퇴실조치)<br>
+                            2) 애완동물은 부득이 타 객실 및 손님을 위해 입실을 금하오니 양해바랍니다.<br>
+                            3) 객실 내에서는 금연입니다.<br>
+                            4) 양초 등 인화물질의 사용을 엄격히 금합니다. <br>
+                            5) 무분별한 음주, 가무, 고성방가는 절대 금하며 주의를 드린 후에도 시정되지 않을 경우 퇴실을 요구할 수 있으며<br>
+                            이러한 경우 이용 요금은 환불해 드리지 않습니다. <br>
+                            6) 리조트 이용 중 비치된 집기, 시설물 파손 시에는 반드시 알려주시기 바랍니다. <br>
+                            파손된 집기나 시설물은 구입가를 기준으로 변상하시면 됩니다.<br>
+                            7) 퇴실 시 음식물을 비롯한 모든 쓰레기는 분리수거해 주시고, 사용하신 주방기구는 세척해 주시기 바랍니다. <br>
+                            8) 이용객의 부주의로 인한 사고에 대해서는 책임을 지지 않습니다.<br>
+                            9) 객실 내에는 1회 용품 (면도기, 칫솔 등)은 비치되어 있지 않습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="resv_box5">
+                    <h1>환불규정</h1>
+                    <p>
+                        1) 올바른 예약문화의 정착을 위하여 불가피한 조치이오니 양해 부탁드립니다.<br>
+                        2) 보호자 동반 없는 미성년자 예약 발견 시 환불 없이 예약 취소됩니다.<br>
+                        3) 예약일 변경 시 발생하는 수수료도 취소 수수료가 동일하게 적용되오니 예약 시 신중하게 생각하시고 결정해 주시기 바랍니다.
+                    </p>
+                    <p><b>기본 환불 수수료 </b></p>
+                    <table>
+                        <tr class="back">
+                            <td>이용당일</td>
+                            <td>1일전</td>
+                            <td>2일전</td>
+                            <td>3일전</td>
+                            <td>4일전</td>
+                            <td>5일전</td>
+                            <td>6일전</td>
+                            <td>7일전</td>
+                            <td>8일전</td>
+                            <td>9일전</td>
+                            <td>10일전</td>
+                        </tr>
+                        <tr>
+                            <td>환불불가</td>
+                            <td>10% 환불</td>
+                            <td>20% 환불</td>
+                            <td>30% 환불</td>
+                            <td>40% 환불</td>
+                            <td>50% 환불</td>
+                            <td>60% 환불</td>
+                            <td>70% 환불</td>
+                            <td>80% 환불</td>
+                            <td>90% 환불</td>
+                            <td>100% 환불</td>
+                        </tr>
+                    </table>
+                </div>
+            </div><!--resv-->
+        </div><!--tab_container-->
+    </div><!--wrapper-->
+    <footer>
+        <div class="footer_gnb_wrap">
+            <ul class="footer_gnb">
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./room1.html">Room</a></li>
+                <li><a href="./special.html">Special Offer</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+            </ul>
+        </div>
+        <div class="footer_inner">
+            <div class="footer_logo">
+                <img src="./image/logo.png" alt="물너울 로고">
+            </div><!--footer_logo-->
+            <table>
+                <tr>
+                    <th class="F_blue">INFOMATION </th>
+                    <td>대표자 : 정서경 / 연락처 : 010-000-0000</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">ADDRESS </th>
+                    <td>부산광역시 기장군 기장읍 공수해안길 75</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">BANK INFO </th>
+                    <td>국민 000-00-00000 (정서경)</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">SNS </th>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.instagram.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_instagram.png" alt="인스타그램"></a>
+                            </li>
+                            <li><a href="https://ko-kr.facebook.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_facebook.png" alt="페이스북"></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_youtube.png" alt="유튜브"></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr></tr>
+            </table>
+        </div><!--footer_inner-->
+    </footer>
+
+    <!--탭 제이쿼리-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+
+            //처음들어갔을때 모습 만들기...
+            $(".tab_content").hide(); //tab_content 부분을 모두 숨김.
+            $("ul.tabs li:first").addClass("active").show(); //첫번째 탭이 active클래스를 붙이고, 보여줌.
+            $(".tab_content:first").show(); //tab_contents중 첫번째꺼를 보여줌
+
+            //On Click Event
+            $("ul.tabs li").click(function () {
+
+                $("ul.tabs li").removeClass("active"); //Remove any "active" class
+                $(this).addClass("active"); //선택한 탭에만 active클래스 붙임
+                $(".tab_content").hide(); //모든 contents들 숨김
+
+                var activeTab = $(this).find("a").attr("href"); //Find the href attribute value to identify the active tab + content
+                /*.attr( attributeName ) -> 선택한 요소의 속성의 값을 가져옵니다.
+                .find()는 어떤 요소의 하위 요소 중 특정 요소를 찾을 때 사용합니다.*/
+                $(activeTab).fadeIn(); //Fade in the active ID content(active되어있는 칸의 id 값을 가진 부분이 나타남)
+                return false;
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $("#datepicker1").datepicker();
+        });
+        $.datepicker.setDefaults({
+            dateFormat: 'yy-mm-dd' //Input Display Format 변경
+        });
+        $.datepicker.setDefaults({
+            monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'] //달력의 월 부분 텍스트
+            , monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'] //달력의 월 부분 Tooltip 텍스트
+            , dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'] //달력의 요일 부분 텍스트
+            , dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'] //달력의 요일 부분 Tooltip 텍스트
+        });
+
+        $(function () {
+            $("#datepicker2").datepicker();
+        });
+        $.datepicker.setDefaults({
+            dateFormat: 'yy-mm-dd' //Input Display Format 변경
+        });
+        $.datepicker.setDefaults({
+            monthNamesShort: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'] //달력의 월 부분 텍스트
+            , monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'] //달력의 월 부분 Tooltip 텍스트
+            , dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'] //달력의 요일 부분 텍스트
+            , dayNames: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'] //달력의 요일 부분 Tooltip 텍스트
+        });
+    </script>
+    <script src="./js/script.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

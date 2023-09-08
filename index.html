@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450px">
+    <title>물너울</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <!--noto, poppin font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--aos 
+    -cdn 복사후 적용시킬 파일의 head 안에 붙여 넣어주세요.-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!--css연결-->
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <div class="main_popup pop_left">
+        <div class="layer_cont">
+            <div class="close_img_wrap">
+                <img src="./image/popup1.jpg" alt="팝업창1">
+            </div>
+            <div class="close_btn_wrap">
+                <!-- 오늘 하루 보지 않기 --->
+                <button class="btn_today_close"><span>오늘 하루 보지 않기</span></button>
+                <!-- 그냥 닫기 --->
+                <button class="btn_close"><span>닫기</span></button>
+            </div><!--close_btn_wrap-->
+        </div>
+    </div><!--main_popup-->
+    <div class="main_popup pop_right">
+        <div class="layer_cont">
+            <div class="close_img_wrap">
+                <img src="./image/popup2.jpg" alt="팝업창2">
+            </div>
+            <div class="close_btn_wrap">
+                <!-- 오늘 하루 보지 않기 --->
+                <button class="btn_today_close"><span>오늘 하루 보지 않기</span></button>
+                <!-- 그냥 닫기 --->
+                <button class="btn_close"><span>닫기</span></button>
+            </div><!--close_btn_wrap-->
+        </div>
+    </div><!--main_popup-->
+    <header>
+        <div class="hd">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/logo.png" alt="물너울"></a>
+            </div><!--logo-->
+            <button class="hd_btn active">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button><!--hd_btn active-->
+        </div><!--hd-->
+        <nav class="menu_wrap">
+            <div class="menu_box">
+                <div class="menu_img">
+                    <ul class="menu_img_list">
+                        <li class="on"><img src="./image/main_menu_about.jpg" alt="메뉴배경1"></li>
+                        <li><img src="./image/main_menu_room.jpg" alt="메뉴배경2"></li>
+                        <li><img src="./image/main_menu_facility.jpg" alt="메뉴배경3"></li>
+                        <li><img src="./image/main_menu_reservation.jpg" alt="메뉴배경4"></li>
+                    </ul>
+                </div><!--menu_img-->
+                <div class="menu_txt">
+                    <dl class="menu_btn1">
+                        <dt class="menu_title F_serif"><a href="./about.html">01. <span class="F_blue">About
+                                    us</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./about.html">
+                                        물너울
+                                    </a></li>
+                                <li><a href="./tour.html">
+                                        주변여행지
+                                    </a></li>
+                                <li><a href="./about.html#4thPage">
+                                        오시는 길
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn2">
+                        <dt class="menu_title F_serif"><a href="./room1.html">02. <span class="F_blue">Room</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./room1.html">
+                                        물결
+                                    </a></li>
+                                <li><a href="./room2.html">
+                                        너울
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn3">
+                        <dt class="menu_title F_serif"><a href="./special.html">03. <span class="F_blue">Special
+                                    Offer</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./special.html#secondPage">
+                                        실내수영장
+                                    </a></li>
+                                <li><a href="./special.html#3rdPage">
+                                        바베큐
+                                    </a></li>
+                                <li><a href="./special.html#4thPage">
+                                        사우나
+                                    </a></li>
+                                <li><a href="./special.html#5thPage">
+                                        전기벽난로
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn4">
+                        <dt class="menu_title F_serif"><a href="./reservation.html#resv">04. <span
+                                    class="F_blue">Reservation</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./community.html">
+                                        공지사항 / 이용후기
+                                    </a></li>
+                                <li><a href="./reservation.html#resv">
+                                        실시간 예약
+                                    </a></li>
+                                <li><a href="./reservation.html">
+                                        EVENT
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div><!--menu_txt-->
+            </div><!--menu_box-->
+        </nav><!--menu_wrap-->
+    </header>
+    <div class="contents">
+        <div class="swiper main_banner">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./image/main1.png" alt="메인이미지1">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/main2.png" alt="메인이미지2">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/main3.png" alt="메인이미지3">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/main4.png" alt="메인이미지4">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/main5.png" alt="메인이미지5">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/main6.png" alt="메인이미지6">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/main7.png" alt="메인이미지7">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/main8.png" alt="메인이미지8">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/main9.png" alt="메인이미지9">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/main10.png" alt="메인이미지10">
+                </div>
+            </div>
+            <div class="swiper-button-next mb_next"></div>
+            <div class="swiper-button-prev mb_prev"></div>
+            <div class="swiper-pagination mb_pag"></div>
+            <div class="mb_txt">
+                <div class="mb_txt_in">
+                    <h1 class="F_serif">MULNEOUL</h1>
+                    <h2 class="F_poppins">POOL & VILLA</h2>
+                </div>
+            </div><!--mb_txt-->
+        </div><!--main_banner-->
+        <div id="about">
+            <div class="about_inner">
+                <h1 class="F_serif">MULNEOUL</h1>
+                <div class="about_video">
+                    <video src="./video/0808_wave.mp4" autoplay muted loop playsinline></video>
+                    <img src="./image/about_img.jpg" alt="비디오 모양">
+                </div><!--about_video-->
+                <div class="about_box" data-aos="fade-up" data-aos-duration="1000">
+                    <p>물너울은 ' 바다와 같이 넓은 공간에서 움직이는 물결' 을 의미합니다.</p>
+                    <p>저희가 준비한 이 곳에서 당신의 마음에 크게 움직이는 물결처럼 다가가기를 바랍니다.</p>
+                    <p>이 곳 물너울의 감성 공간 속에서 편안한 휴식을 취하시길 바랍니다.</p>
+                </div><!--about_box-->
+                <a href="./about.html" class="btn_wave F_poppins">
+                    <span>MORE VIEW</span>
+                    <div class="wave"></div>
+                    <div class="backcolor"></div>
+                </a>
+            </div><!--about_inner-->
+            <!--왼쪽 물방울 구역-->
+            <section class="left">
+            </section>
+            <!--오른쪽 물방울 구역-->
+            <section class="right">
+            </section>
+        </div><!--about-->
+        <div id="room">
+            <div class="room_inner" data-aos="fade-right" data-aos-offset="500">
+                <h1 class="F_poppins">Room</h1>
+                <p>아름다운 바다가 눈 앞에 펼쳐진 물너울 풀빌라 객실을 소개합니다.</p>
+            </div><!--room_inner-->
+            <div class="room_wrap">
+                <div class="room_card" data-aos="fade-up" data-aos-offset="500">
+                    <div class="tape">
+                        <img src="./image/room_tape.png" alt="테이프">
+                    </div><!--tape-->
+                    <div class="swiper room_img">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/room1_1.jpg" alt="룸1-1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room1_2.jpg" alt="룸1-2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room1_3.jpg" alt="룸1-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room1_4.jpg" alt="룸1-4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room1_5.jpg" alt="룸1-5">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room1_6.jpg" alt="룸1-6">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room1_7.jpg" alt="룸1-7">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room1_8.jpg" alt="룸1-8">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room1_9.jpg" alt="룸1-9">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination room_pag"></div>
+                    </div><!--room_img-->
+                    <div class="room_txt_wrap">
+                        <div class="room_txt_title">
+                            <p>01. 물결</p>
+                        </div>
+                        <div class="room_txt_sub">
+                            <p>- 방 2, 화장실2, 거실, 실내수영장<br>
+                                - 바베큐, 실내수영장, 사우나 </p>
+                        </div>
+                    </div><!--room_txt_wrap-->
+                    <div class="btn_room">
+                        <a href="./room1.html" class="btn_wave">
+                            <span>MORE VIEW</span>
+                            <div class="wave"></div>
+                            <div class="backcolor"></div>
+                        </a>
+                    </div><!--btn_room-->
+                </div><!--room_card-->
+                <div class="room_card" data-aos="fade-up" data-aos-offset="500" data-aos-delay="200">
+                    <div class="tape">
+                        <img src="./image/room_tape.png" alt="테이프">
+                    </div><!--tape-->
+                    <div class="swiper room_img">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./image/room2_1.jpg" alt="룸2-1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room2_2.jpg" alt="룸2-2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room2_3.jpg" alt="룸2-3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room2_4.jpg" alt="룸2-4">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room2_5.jpg" alt="룸2-5">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room2_6.jpg" alt="룸2-6">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room2_7.jpg" alt="룸2-7">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room2_8.jpg" alt="룸2-8">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./image/room2_9.jpg" alt="룸2-9">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination room_pag"></div>
+                    </div><!--room_img-->
+                    <div class="room_txt_wrap">
+                        <div class="room_txt_title">
+                            <p>02. 너울</p>
+                        </div>
+                        <div class="room_txt_sub">
+                            <p>- 방 2, 화장실2, 거실, 실내수영장<br>
+                                - 바베큐, 실내수영장, 사우나 </p>
+                        </div>
+                    </div><!--room_txt_wrap-->
+                    <div class="btn_room">
+                        <a href="./room2.html" class="btn_wave">
+                            <span>MORE VIEW</span>
+                            <div class="wave"></div>
+                            <div class="backcolor"></div>
+                        </a>
+                    </div><!--btn_room-->
+                </div><!--room_card-->
+            </div><!--room_wrap-->
+            <!--화면아래 물 wave 구역-->
+            <section>
+                <div class="back_wave">
+                    <div class="wave_in" id="wave1"></div>
+                    <div class="wave_in" id="wave2"></div>
+                    <div class="wave_in" id="wave3"></div>
+                    <div class="wave_in" id="wave4"></div>
+                </div>
+            </section>
+        </div><!--room-->
+        <div id="sub_banner">
+            <img src="./image/sub_bg1.jpg" alt="배경이미지">
+            <div class="sub_bbox">
+                <p class="F_poppins">MULNEOUL <span>POOL & VILLA</span>&nbsp;</p>
+                <p class="F_poppins">MULNEOUL <span>POOL & VILLA</span>&nbsp;</p>
+            </div>
+        </div><!--sub_banner-->
+        <div id="special">
+            <div class="special_inner">
+                <div class="swiper special_box" data-aos="fade-right" data-aos-offset="300">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="special_img">
+                                <img src="./image/facility_swimming pool.png" alt="실내수영장">
+                            </div>
+                            <div class="btn_special">
+                                <a href="./special.html#secondPage">more view <img src="./image/next_btn.png"
+                                        alt="페이지이동"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="special_img">
+                                <img src="./image/facility_barbeque.png" alt="바베큐">
+                            </div>
+                            <div class="btn_special">
+                                <a href="./special.html#3rdPage">more view <img src="./image/next_btn.png"
+                                        alt="페이지이동"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="special_img">
+                                <img src="./image/facility_sauna.png" alt="사우나">
+                            </div>
+                            <div class="btn_special">
+                                <a href="./special.html#4thPage">more view <img src="./image/next_btn.png"
+                                        alt="페이지이동"></a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="special_img">
+                                <img src="./image/facility_fireplace.png" alt="전기벽난로">
+                            </div>
+                            <div class="btn_special">
+                                <a href="./special.html#5thPage">more view <img src="./image/next_btn.png"
+                                        alt="페이지이동"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next sp_next"></div>
+                    <div class="swiper-button-prev sp_prev"></div>
+                </div><!--special_box-->
+                <div class="special_txt" data-aos="fade-left" data-aos-offset="300">
+                    <h1 class="F_poppins">Special<br> Offer</h1>
+                    <p>물너울 풀빌라 내에서 다양하게 즐길 수 있는 부대시설을 소개합니다.</p>
+                </div><!--faciltiies_txt-->
+            </div><!--special_inner-->
+        </div><!--special-->
+        <div id="gallery">
+            <div class="gallery_txt" data-aos="fade-left" data-aos-offset="500">
+                <h1 class="F_poppins">Gallery</h1>
+                <p>물너울의 감성 한조각</p>
+            </div><!--gallery_txt-->
+            <div class="swiper gallery_img" data-aos="fade-left" data-aos-offset="500">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="./image/gallery1.jpg" alt="갤러리1"></div>
+                    <div class="swiper-slide"><img src="./image/gallery2.jpg" alt="갤러리2"></div>
+                    <div class="swiper-slide"><img src="./image/gallery3.jpg" alt="갤러리3"></div>
+                    <div class="swiper-slide"><img src="./image/gallery4.jpg" alt="갤러리4"></div>
+                    <div class="swiper-slide"><img src="./image/gallery5.jpg" alt="갤러리5"></div>
+                    <div class="swiper-slide"><img src="./image/gallery6.jpg" alt="갤러리6"></div>
+                    <div class="swiper-slide"><img src="./image/gallery7.jpg" alt="갤러리7"></div>
+                    <div class="swiper-slide"><img src="./image/gallery8.jpg" alt="갤러리8"></div>
+                    <div class="swiper-slide"><img src="./image/gallery9.jpg" alt="갤러리9"></div>
+                    <div class="swiper-slide"><img src="./image/gallery10.jpg" alt="갤러리10"></div>
+                </div>
+            </div><!--gallery_img-->
+        </div><!--gallery-->
+        <div id="way">
+            <div class="way_inner" data-aos="fade" data-aos-offset="500" data-aos-duration="800">
+                <div class="way_txt">
+                    <h2 class="F_serif">location</h2>
+                    <h1>물너울로 오시는 길</h1>
+                    <h2>주소 : 부산광역시 기장군 기장읍 공수해안길 75</h3>
+                        <p class="F_serif">Way to Mulneoul</p>
+                        <div class="way_btn_wrap">
+                            <a href="./About.html#4thPage" class="way_btn">
+                                <p class="F_serif">more<br>view</p>
+                            </a>
+                            <a href="https://map.naver.com/p/directions/-/14384115.6645407,4189308.6180097,%EB%B6%80%EC%82%B0%EA%B4%91%EC%97%AD%EC%8B%9C%20%EA%B8%B0%EC%9E%A5%EA%B5%B0%20%EA%B8%B0%EC%9E%A5%EC%9D%8D%20%EA%B3%B5%EC%88%98%ED%95%B4%EC%95%88%EA%B8%B8%2075,,ADDRESS_POI/-/transit?c=19.00,0,0,0,dh"
+                                target="_blank" class="way_btn"><img src="./image/icon_way.png" alt="네이버지도 연결"></a>
+                        </div><!--way_btn_wrap-->
+                </div><!--way_txt-->
+                <div class="way_gps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.780277646598!2d129.2123213763832!3d35.18702855696258!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688c3d10608367%3A0x556d4f3d4d4694fa!2z67aA7IKw6rSR7Jet7IucIOq4sOyepeq1sCDquLDsnqXsnY0g6rO17IiY7ZW07JWI6ri4IDc1!5e0!3m2!1sko!2skr!4v1691727608901!5m2!1sko!2skr"
+                        width="660" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div><!--way_gps-->
+            </div><!--way_inner-->
+        </div><!--way-->
+        <div id="reservation">
+            <p>아늑하고 단정한 이곳에서의<br>
+                여유롭고 편안한 휴식 시간</p>
+            <h1>나의 휴식처, 물너울</h1>
+            <a href="./reservation.html">
+                실시간 예약
+            </a>
+        </div><!--reservation-->
+    </div>
+    <footer>
+        <div class="footer_gnb_wrap">
+            <ul class="footer_gnb">
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./room1.html">Room</a></li>
+                <li><a href="./special.html">Special Offer</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+            </ul>
+        </div>
+        <div class="footer_inner">
+            <div class="footer_logo">
+                <img src="./image/logo.png" alt="물너울 로고">
+            </div><!--footer_logo-->
+            <table>
+                <tr>
+                    <th class="F_blue">INFOMATION </th>
+                    <td>대표자 : 정서경 / 연락처 : 010-000-0000</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">ADDRESS </th>
+                    <td>부산광역시 기장군 기장읍 공수해안길 75</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">BANK INFO </th>
+                    <td>국민 000-00-00000 (정서경)</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">SNS </th>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.instagram.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_instagram.png" alt="인스타그램"></a>
+                            </li>
+                            <li><a href="https://ko-kr.facebook.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_facebook.png" alt="페이스북"></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_youtube.png" alt="유튜브"></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr></tr>
+            </table>
+        </div><!--footer_inner-->
+    </footer>
+
+    <!--JS파일 연결-->
+    <script src="./js/common.js"></script>
+    <!--왼쪽 물방울-->
+    <script type="text/javascript">
+        function createBubble() {
+            const section = document.querySelector('section.left')
+            const createElement = document.createElement('span')
+            var size = Math.random() * 25;
+
+            createElement.style.width = 10 + size + 'px';
+            createElement.style.height = 10 + size + 'px';
+            createElement.style.left = Math.random() * 350 + "px";
+            section.appendChild(createElement);
+
+            setTimeout(() => { createElement.remove() }, 10000)
+        } setInterval(createBubble, 1500)
+    </script>
+    <!--오른쪽 물방울-->
+    <script type="text/javascript">
+        function createBubble() {
+            const section = document.querySelector('section.right')
+            const createElement = document.createElement('span')
+            var size = Math.random() * 25;
+
+            createElement.style.width = 10 + size + 'px';
+            createElement.style.height = 10 + size + 'px';
+            createElement.style.right = Math.random() * 350 + "px";
+            section.appendChild(createElement);
+
+            setTimeout(() => { createElement.remove() }, 10000)
+        } setInterval(createBubble, 1500)
+    </script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".main_banner", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            speed: 1000,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".room_img", {
+            spaceBetween: 30,
+            effect: "fade",
+            pagination: {
+                el: ".swiper-pagination",
+                dynamicBullets: true,
+                clickable: true,
+            },
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            loop: true,
+            speed: 1000,
+            grabCursor: true,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".special_box", {
+            spaceBetween: 30,
+            effect: "fade",
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            loop: true,
+            speed: 500,
+        });
+    </script>
+    <script>
+        var swiper = new Swiper(".gallery_img", {
+            slidesPerView: 5,
+            spaceBetween: 30,
+            autoplay: {
+                delay: 1500,
+                disableOnInteraction: false,
+            },
+            grabCursor: true,
+            loop: true,
+            speed: 800,
+        });
+    </script>
+    <!--aos-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

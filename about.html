@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450px">
+    <title>물너울</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <!--noto, poppin font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--aos 
+    -cdn 복사후 적용시킬 파일의 head 안에 붙여 넣어주세요.-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!--aos effect-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--aos css 연결-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--aos js 연결-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.9.1/jquery-ui.min.js"
+        integrity="sha256-UezNdLBLZaG/YoRcr48I68gr8pb5gyTBM+di5P8p6t8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+    <!--css연결-->
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+
+
+<body>
+    <header>
+        <div class="hd">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/logo.png" alt="물너울"></a>
+            </div><!--logo-->
+            <button class="hd_btn active">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button><!--hd_btn active-->
+        </div><!--hd-->
+        <nav class="menu_wrap">
+            <div class="menu_box">
+                <div class="menu_img">
+                    <ul class="menu_img_list">
+                        <li class="on"><img src="./image/main_menu_about.jpg" alt="메뉴배경1"></li>
+                        <li><img src="./image/main_menu_room.jpg" alt="메뉴배경2"></li>
+                        <li><img src="./image/main_menu_facility.jpg" alt="메뉴배경3"></li>
+                        <li><img src="./image/main_menu_reservation.jpg" alt="메뉴배경4"></li>
+                    </ul>
+                </div><!--menu_img-->
+                <div class="menu_txt">
+                    <dl class="menu_btn1">
+                        <dt class="menu_title F_serif"><a href="./about.html">01. <span class="F_blue">About
+                                    us</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./about.html">
+                                        물너울
+                                    </a></li>
+                                <li><a href="./tour.html">
+                                        주변여행지
+                                    </a></li>
+                                <li><a href="./about.html#4thPage">
+                                        오시는 길
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn2">
+                        <dt class="menu_title F_serif"><a href="./room1.html">02. <span class="F_blue">Room</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./room1.html">
+                                        물결
+                                    </a></li>
+                                <li><a href="./room2.html">
+                                        너울
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn3">
+                        <dt class="menu_title F_serif"><a href="./special.html">03. <span class="F_blue">Special
+                                    Offer</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./special.html#secondPage">
+                                        실내수영장
+                                    </a></li>
+                                <li><a href="./special.html#3rdPage">
+                                        바베큐
+                                    </a></li>
+                                <li><a href="./special.html#4thPage">
+                                        사우나
+                                    </a></li>
+                                <li><a href="./special.html#5thPage">
+                                        전기벽난로
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn4">
+                        <dt class="menu_title F_serif"><a href="./reservation.html#resv">04. <span
+                                    class="F_blue">Reservation</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./community.html">
+                                        공지사항 / 이용후기
+                                    </a></li>
+                                <li><a href="./reservation.html#resv">
+                                        실시간 예약
+                                    </a></li>
+                                <li><a href="./reservation.html">
+                                        EVENT
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div><!--menu_txt-->
+            </div><!--menu_box-->
+        </nav><!--menu_wrap-->
+    </header>
+    <div id="fullpage">
+        <div class="section sec1" id="section0">
+            <div id="about_b">
+                <div class="about_b_inner">
+                    <div class="about_txt">
+                        <img src="./image/about_banner_up.png" alt="배너 글씨" id="image">
+                    </div>
+                    <div class="about_img">
+                        <img src="./image/about_banner.png" alt="about 배너">
+                    </div>
+                </div>
+            </div><!--about_b-->
+        </div>
+        <div class="section sec2" id="section1">
+            <div id="about_rest">
+                <div class="about_inner">
+                    <div class="rest1" data-aos="fade-right" data-aos-offset="500">
+                        <img src="./image/about_rest.png" alt="왼쪽 레이아웃">
+                    </div>
+                    <div class="rest2" data-aos="fade-up" data-aos-offset="500">
+                        <h1>#물너울 #독채풀빌라 # 프라이빗 #도심_속_휴양지</h1>
+                        <img src="./image/about_rest_img.jpg" alt="메인 이미지">
+                        <p>물너울은 ‘ 바다와같이 넓은 공간에서 움직이는 물결 ’ 을 의미합니다.<br>
+                            저희가 준비한 이 곳에서 당신의 마음에 크게 움직이는 물결처럼 다가가기를 바랍니다.<br>
+                            이 곳 물너울의 감성 공간 속에서 편안한 휴식을 취하시길 바랍니다.</p>
+                    </div>
+                    <div class="rest3" data-aos="fade-left" data-aos-offset="500">
+                        <h3>PRIVATE<br>VILLA<br>WITH<br>POOL</h3>
+                        <h2>07<br><br>08<br>23</h2>
+                    </div>
+                </div>
+            </div><!--about_rest-->
+        </div>
+        <div class="section sec3" id="section2">
+            <div id="about_logo">
+                <div class="logo_inner">
+                    <div class="logo_box radius1" data-aos="flip-right" data-aos-offset="500">
+                        <span class="F_poppins">Main</span>
+                        <ul>
+                            <li><img src="./image/about_logo.png" alt="메인로고"></li>
+                            <li>
+                                <p><span class="F_blue">“</span> 모던하면서 깔끔한 느낌과 물의 느낌을<br>
+                                    살리기 위해 선을 기본으로<br>
+                                    물결무늬를 추가하였습니다.<br>
+                                    오션뷰를 제공하는 만큼<br>
+                                    시원한 블루 컬러와<br>
+                                    감성적인 인테리어를 의미하는<br>
+                                    베이지 컬러를 추가하였습니다. <span class="F_blue">”</span> </p>
+                            </li>
+                        </ul>
+                    </div><!--logo_box 왼-->
+                    <div class="logo_box" data-aos="flip-down" data-aos-offset="600">
+                        <span class="F_poppins">Sub</span>
+                        <ul>
+                            <li><img src="./image/sub_logo.png" alt="서브로고"></li>
+                            <li>
+                                <p><span class="F_blue">“</span> 풀빌라 컵셉에 맞게 집모양으로<br>
+                                    로고 디자인을 잡았으며,<br>
+                                    브랜드 명인 물너울을 차용하여<br>
+                                    집 디자인을 짤 때,<br>
+                                    ㅁ,ㄹ,ㄴ,ㅓ,ㅇ,ㄹ 형상을 넣어<br>
+                                    구조를 배치하였습니다. <span class="F_blue">”</span> </p>
+                            </li>
+                        </ul>
+                    </div><!--logo_box 중-->
+                    <div class="logo_box radius2" data-aos="flip-left" data-aos-offset="700">
+                        <ul>
+                            <li>
+                                <p class="color_box blue_box">R0 G140 B191</p>
+                                <p class="color_box sky_box">R138 G206 B236</p>
+                                <p class="color_box bagie_box">R241 G222 B200</p>
+                            </li>
+                            <li>
+                                <p><span class="F_blue">“</span> 시원한 물을 생각나게 하는 푸른 컬러 <span class="F_blue">”</span><br>
+                                    <span class="F_blue">“</span> 감성적인 인테리어 느낌을<br>
+                                    살리게 하기 위한 베이지 컬러 <span class="F_blue">”</span><br>
+                                    비슷한 느낌의 색상을 주어<br>
+                                    안정감을 표현했습니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div><!--logo_box 오-->
+                </div><!--logo_inner-->
+            </div><!--about_logo-->
+        </div>
+        <div class="section sec4" id="section3">
+            <div id="about_way">
+                <div class="about_way_title">
+                    <h1># <span class="F_blue">물너울</span>로 오시는 길</h1>
+                </div><!--about_way_title-->
+                <div class="about_way_card" data-aos="fade-up" data-aos-offset="500">
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3260.780277651093!2d129.21231601106862!3d35.18702855685055!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35688c3d10608367%3A0x556d4f3d4d4694fa!2z67aA7IKw6rSR7Jet7IucIOq4sOyepeq1sCDquLDsnqXsnY0g6rO17IiY7ZW07JWI6ri4IDc1!5e0!3m2!1sko!2skr!4v1692597435413!5m2!1sko!2skr"
+                            width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div><!--map-->
+                    <div class="address">
+                        <h2 class="F_blue">ADDRESS</h2>
+                        <h3>부산광역시 기장군 기장읍 공수해안길 75</h3>
+                        <img src="./image/icon_bus.png" alt="버스아이콘">
+                        <p>시내 버스 : 100번, 181번, 185번 공수.당수마을 하차<br>
+                            마을 버스 : 해운대구 9번 당사.양경마을 하차<br>
+                            급행 버스 : 1001번 동부산 관광단지 하차
+                        </p>
+                        <img src="./image/icon_train.png" alt="지하철 아이콘">
+                        <p>동해선 오시리아역 하차</p>
+                        <img src="./image/icon_car.png" alt="자동차 아이콘">
+                        <p>동해고속도로(부산-울산) 이용<br>
+                            동부산 톨게이트에서 '공수해안길'방면으로 우회전</p>
+                    </div><!--address-->
+                </div><!--about_way_card-->
+            </div><!--about_way-->
+        </div>
+        <div class="section sec5 fp-auto-height" id="section3">
+            <div id="reservation">
+                <p>아늑하고 단정한 이곳에서의<br>
+                    여유롭고 편안한 휴식 시간</p>
+                <h1>나의 휴식처, 물너울</h1>
+                <a href="./reservation.html">
+                    실시간 예약
+                </a>
+            </div><!--reservation-->
+            <footer>
+                <div class="footer_gnb_wrap">
+                    <ul class="footer_gnb">
+                        <li><a href="./about.html">About us</a></li>
+                        <li><a href="./room1.html">Room</a></li>
+                        <li><a href="./special.html">Special Offer</a></li>
+                        <li><a href="./reservation.html">Reservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer_inner">
+                    <div class="footer_logo">
+                        <img src="./image/logo.png" alt="물너울 로고">
+                    </div><!--footer_logo-->
+                    <table>
+                        <tr>
+                            <th class="F_blue">INFOMATION </th>
+                            <td>대표자 : 정서경 / 연락처 : 010-000-0000</td>
+                        </tr>
+                        <tr>
+                            <th class="F_blue">ADDRESS </th>
+                            <td>부산광역시 기장군 기장읍 공수해안길 75</td>
+                        </tr>
+                        <tr>
+                            <th class="F_blue">BANK INFO </th>
+                            <td>국민 000-00-00000 (정서경)</td>
+                        </tr>
+                        <tr>
+                            <th class="F_blue">SNS </th>
+                            <td>
+                                <ul>
+                                    <li><a href="https://www.instagram.com/" class="sns_icon" target="_blank"><img
+                                                src="./image/icon_instagram.png" alt="인스타그램"></a>
+                                    </li>
+                                    <li><a href="https://ko-kr.facebook.com/" class="sns_icon" target="_blank"><img
+                                                src="./image/icon_facebook.png" alt="페이스북"></a>
+                                    </li>
+                                    <li><a href="https://www.youtube.com/" class="sns_icon" target="_blank"><img
+                                                src="./image/icon_youtube.png" alt="유튜브"></a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr></tr>
+                    </table>
+                </div><!--footer_inner-->
+            </footer>
+        </div>
+    </div>
+    <!--JS파일 연결-->
+    <script src="./js/common.js"></script>
+    <script src="./js/rotate.js"></script>
+    <script>
+        var angle = 0;
+        setInterval(function () {
+            angle += 0.1;
+            $("#image").rotate(angle);
+        }, 10);
+    </script>
+    <!--aos-->
+    <script>
+        AOS.init();
+        $('[data-aos]').each(function () { $(this).addClass("aos-init"); });
+
+        $(document).ready(function () {
+            $("#fullpage").fullpage({
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage'],
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['First page', 'Second page', 'Third page', 'Fourth', 'Fifth and last page'],
+                onLeave: function () {
+                    $('.section [data-aos]').each(function () {
+                        $(this).removeClass("aos-animate")
+                    });
+                },
+                onSlideLeave: function () {
+                    $('.slide [data-aos]').each(function () {
+                        $(this).removeClass("aos-animate")
+                    });
+                },
+                afterSlideLoad: function () {
+                    $('.slide.active [data-aos]').each(function () {
+                        $(this).addClass("aos-animate")
+                    });
+                },
+                afterLoad: function () {
+                    $('.section.active [data-aos]').each(function () {
+                        $(this).addClass("aos-animate")
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

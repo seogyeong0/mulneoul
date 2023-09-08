@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=1450px">
+    <title>물너울</title>
+    <!--favicon-->
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <!--noto, poppin font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <!--aos 
+    -cdn 복사후 적용시킬 파일의 head 안에 붙여 넣어주세요.-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--jQuery-->
+    <script src="https://code.jquery.com/jquery-3.7.0.js"
+        integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <!--css연결-->
+    <link rel="stylesheet" href="./css/commom.css">
+    <link rel="stylesheet" href="./css/room.css">
+</head>
+
+<body>
+    <header>
+        <div class="hd">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/logo.png" alt="물너울"></a>
+            </div><!--logo-->
+            <button class="hd_btn active">
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button><!--hd_btn active-->
+        </div><!--hd-->
+        <nav class="menu_wrap">
+            <div class="menu_box">
+                <div class="menu_img">
+                    <ul class="menu_img_list">
+                        <li class="on"><img src="./image/main_menu_about.jpg" alt="메뉴배경1"></li>
+                        <li><img src="./image/main_menu_room.jpg" alt="메뉴배경2"></li>
+                        <li><img src="./image/main_menu_facility.jpg" alt="메뉴배경3"></li>
+                        <li><img src="./image/main_menu_reservation.jpg" alt="메뉴배경4"></li>
+                    </ul>
+                </div><!--menu_img-->
+                <div class="menu_txt">
+                    <dl class="menu_btn1">
+                        <dt class="menu_title F_serif"><a href="./about.html">01. <span class="F_blue">About
+                                    us</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./about.html">
+                                        물너울
+                                    </a></li>
+                                <li><a href="./tour.html">
+                                        주변여행지
+                                    </a></li>
+                                <li><a href="./about.html#4thPage">
+                                        오시는 길
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn2">
+                        <dt class="menu_title F_serif"><a href="./room1.html">02. <span class="F_blue">Room</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./room1.html">
+                                        물결
+                                    </a></li>
+                                <li><a href="./room2.html">
+                                        너울
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn3">
+                        <dt class="menu_title F_serif"><a href="./special.html">03. <span class="F_blue">Special
+                                    Offer</span></a>
+                        </dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./special.html#secondPage">
+                                        실내수영장
+                                    </a></li>
+                                <li><a href="./special.html#3rdPage">
+                                        바베큐
+                                    </a></li>
+                                <li><a href="./special.html#4thPage">
+                                        사우나
+                                    </a></li>
+                                <li><a href="./special.html#5thPage">
+                                        전기벽난로
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                    <dl class="menu_btn4">
+                        <dt class="menu_title F_serif"><a href="./reservation.html#resv">04. <span
+                                    class="F_blue">Reservation</span></a></dt>
+                        <dd>
+                            <ul class="menu_sub_title">
+                                <li><a href="./community.html">
+                                        공지사항 / 이용후기
+                                    </a></li>
+                                <li><a href="./reservation.html#resv">
+                                        실시간 예약
+                                    </a></li>
+                                <li><a href="./reservation.html">
+                                        EVENT
+                                    </a></li>
+                            </ul>
+                        </dd>
+                    </dl>
+                </div><!--menu_txt-->
+            </div><!--menu_box-->
+        </nav><!--menu_wrap-->
+    </header>
+    <div id="room_banner">
+        <div class="room_b_txt" data-aos="fade-up" data-aos-duration="800" data-aos-delay="800">
+            <h1>MULNEOUL ROOMS</h1>
+            <p>아름다운 전망의 객실,<br>
+                완벽한 힐링의 여유를 느껴보세요</p>
+        </div><!--room_b_txt-->
+        <div class="room_b_img">
+            <img src="./image/room_b2.jpg" alt="룸 배너">
+        </div>
+    </div><!--room_banner-->
+    <div id="room_content" data-aos="fade-up" data-aos-duration="800">
+        <h1 class="F_serif F_blue">독채 풀빌라 2 : 너울</h1>
+        <p class="F_serif">A happy and comfortable place, I'm Lago Poolvilla. </p>
+    </div><!--room_content-->
+    <div id="room_info">
+        <div class="room_img" data-aos="zoom-in" data-aos-offset="100">
+            <img src="./image/room_info_bg2.jpg" alt="물결 방 이미지1" class="bigger">
+            <img src="./image/circle_bg.png" alt="사진 뒤 배경">
+        </div><!--room_img-->
+        <div class="room_txt">
+            <h1 class="F_serif F_blue" data-aos="fade-up" data-aos-offset="200">Information</h1>
+            <div class="room_icon_wrap">
+                <div class="room_icon" data-aos="fade-up" data-aos-offset="300" data-aos-delay="100">
+                    <p class="F_serif"><span>room type</span></p>
+                    <div class="middle">
+                        <img src="./image/icon_pool.png" alt="독채 풀빌라 아이콘">
+                    </div>
+                    <p>독채풀빌라</p>
+                </div><!--room_icon-->
+                <div class="room_icon" data-aos="fade-up" data-aos-offset="400" data-aos-delay="100">
+                    <p class="F_serif"><span>personnel</span></p>
+                    <div class="middle">
+                        <img src="./image/icon_person.png" alt="독채 풀빌라 아이콘">
+                    </div>
+                    <p>기준 4인 / 최대 8인</p>
+                </div><!--room_icon-->
+                <div class="room_icon" data-aos="fade-up" data-aos-offset="500" data-aos-delay="100">
+                    <p class="F_serif"><span>time</span></p>
+                    <div class="middle">
+                        <h3 class="F_blue">
+                            15:00<br>
+                            11:00
+                        </h3>
+                    </div>
+                    <p>체크인 / 체크아웃</p>
+                </div><!--room_icon-->
+            </div><!--room_icon_wrap-->
+            <div class="bottom" data-aos="fade-up" data-aos-offset="300">
+                <p><span>예약 시 유의사항</span></p>
+                <p>- 객실요금은 기준인원에 준한것이며, 기준인원을 초과할 경우 추가요금이 적용됩니다.<br>
+                    - 미성년자는 보호자 동반없이 이용하실 수 없습니다.<br>
+                    - 반려동물 입실 불가입니다.<br>
+                    - 객실 내에서는 절대 금연입니다.<br>
+                    - 개인 버너 및 화기용품 반입 금지입니다.</p>
+            </div>
+        </div><!--room_txt-->
+    </div><!--room_info-->
+    <div id="room_notice">
+        <ul>
+            <li>
+                <div class="room_title">
+                    <div class="title_in F_blue">Amenity 비품</div>
+                    <div class="plus"><img src="./image/icon_plus.png" alt="plus"></div>
+                </div>
+                <div class="text_info">
+                    <p>Living : 시스템에어컨,식탁,빔프로젝터,무선청소기,블루투스 스피커<br>
+                        Kitchen : 냉장고, 식기세척기, 전기밥솥, 전자렌지, 인덕션, 정수기, 캡슐커피머신, 식기류, 주방세제, 1회용수세미, 1회용행주<br>
+                        Bathroom : 샴푸, 린스, 바디워시, 치약, 일회용칫솔, 핸드워시, 수건, 드라이어, 고데기</p>
+                </div>
+            </li>
+            <li>
+                <div class="room_title">
+                    <div class="title_in F_blue">Notice 유의사항</div>
+                    <div class="plus"><img src="./image/icon_plus.png" alt="plus"></div>
+                </div>
+                <div class="text_info">
+                    <p>- 입금 시 예약자와 입금자명이 다를 경우 필히 확인 전화 주십시오.<br>
+                        - 실시간예약 달력으로 예약시 발송되는 문자(객실,투숙일,요금)를 확인하세요.<br>
+                        - 최대인원 초과시 입실 및 환불이 불가합니다.<br>
+                        - 19시 이후 펜션에 도착하실 경우 미리 연락하셔야 하며, 사전 연락이 없을 경우 입실을 제한 받을 수 있습니다.<br>
+                        - 이용중 집기 파손 시에는 펜션지기에게 알려주시기 바랍니다.<br>
+                        - 쓰레기는 지정된 장소에 분리하여 주시기 바랍니다.<br>
+                        - 오후 10시 이후의 바베큐장 이용 및 고성방가는 타 객실손님을 위하여 금하오니 양해 바랍니다.<br>
+                        - 객실내에서는 육류(삼겹살/튀김류) 구이 및 냄새나는 음식(생선, 청국장 등)을 금하오니 실외 지정된 장소 및 바베큐장을 이용하시길 부탁드립니다. (화재 및 냄새로 인한
+                        타손님
+                        배려차원입니다)</p>
+                </div>
+            </li>
+        </ul>
+    </div><!--room_notice-->
+    <div id="room_slide">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper room_slide_big">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./image/room2_11.jpg" alt="룸1" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_12.jpg" alt="룸2" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_13.jpg" alt="룸3" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_14.jpg" alt="룸4" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_15.jpg" alt="룸5" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_16.jpg" alt="룸6" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_17.jpg" alt="룸7" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_18.jpg" alt="룸8" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_19.jpg" alt="룸9" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_20.jpg" alt="룸10" />
+                </div>
+            </div>
+            <div class="swiper-button-next room_next"></div>
+            <div class="swiper-button-prev room_prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper room_slide_small">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./image/room2_11.jpg" alt="룸1" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_12.jpg" alt="룸2" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_13.jpg" alt="룸3" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_14.jpg" alt="룸4" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_15.jpg" alt="룸5" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_16.jpg" alt="룸6" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_17.jpg" alt="룸7" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_18.jpg" alt="룸8" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_19.jpg" alt="룸9" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./image/room2_20.jpg" alt="룸10" />
+                </div>
+            </div>
+        </div>
+    </div><!--room_slide-->
+    <div id="room_card">
+        <div class="room_inner">
+            <a href="./room1.html">
+                <div class="room_in">
+                    <img src="./image/room_card1.jpg" alt="룸1 이동">
+                    <h2 class="F_serif">물결</h2>
+                    <p>물너울의 객실은 도심 속 휴식을 원하는 여러분에게 편안한 시간을 제공합니다.<br>
+                        일상으로부터의 해소 그리고 그 속에서 느끼는 최상의 편안함을<br>
+                        잡은 물너울의 공간 속에서 반짝이는 부산의 바다와<br>
+                        다양한 엑티비티가 있는 기장에서 아름다운 추억을 얻길 바랍니다.
+                    </p>
+                    <h4>YOU’LL WANT TO STAY FOREVER</h4>
+                </div><!--room_in-->
+                <div class="room_out">
+                    <img src="./image/room_card1.jpg" alt="룸 1 이동">
+                    <h2 class="F_serif">물결</h2>
+                    <p>see more <img src="./image/wnext_btn.png" alt="더보기 사진"></p>
+                </div><!--room_out-->
+            </a>
+        </div><!--room_inner-->
+        <div class="room_inner">
+            <a href="./room2.html">
+                <div class="room_in">
+                    <img src="./image/room_card2.jpg" alt="룸1 이동">
+                    <h2 class="F_serif">너울</h2>
+                    <p>물너울의 객실은 도심 속 휴식을 원하는 여러분에게 편안한 시간을 제공합니다.<br>
+                        일상으로부터의 해소 그리고 그 속에서 느끼는 최상의 편안함을<br>
+                        잡은 물너울의 공간 속에서 반짝이는 부산의 바다와<br>
+                        다양한 엑티비티가 있는 기장에서 아름다운 추억을 얻길 바랍니다.
+                    </p>
+                    <h4 class="F_poppins">YOU’LL WANT TO STAY FOREVER</h4>
+                </div><!--room_in-->
+                <div class="room_out">
+                    <img src="./image/room_card2.jpg" alt="룸 1 이동">
+                    <h2 class="F_serif">너울</h2>
+                    <p>see more <img src="./image/wnext_btn.png" alt="더보기 사진"></p>
+                </div><!--room_out-->
+            </a>
+        </div><!--room_inner-->
+    </div><!--room_card-->
+    <div id="reservation">
+        <p>아늑하고 단정한 이곳에서의<br>
+            여유롭고 편안한 휴식 시간</p>
+        <h1>나의 휴식처, 물너울</h1>
+        <a href="./reservation.html">
+            실시간 예약
+        </a>
+    </div><!--reservation-->
+    <footer>
+        <div class="footer_gnb_wrap">
+            <ul class="footer_gnb">
+                <li><a href="./about.html">About us</a></li>
+                <li><a href="./room1.html">Room</a></li>
+                <li><a href="./special.html">Special Offer</a></li>
+                <li><a href="./reservation.html">Reservation</a></li>
+            </ul>
+        </div>
+        <div class="footer_inner">
+            <div class="footer_logo">
+                <img src="./image/logo.png" alt="물너울 로고">
+            </div><!--footer_logo-->
+            <table>
+                <tr>
+                    <th class="F_blue">INFOMATION </th>
+                    <td>대표자 : 정서경 / 연락처 : 010-000-0000</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">ADDRESS </th>
+                    <td>부산광역시 기장군 기장읍 공수해안길 75</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">BANK INFO </th>
+                    <td>국민 000-00-00000 (정서경)</td>
+                </tr>
+                <tr>
+                    <th class="F_blue">SNS </th>
+                    <td>
+                        <ul>
+                            <li><a href="https://www.instagram.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_instagram.png" alt="인스타그램"></a>
+                            </li>
+                            <li><a href="https://ko-kr.facebook.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_facebook.png" alt="페이스북"></a>
+                            </li>
+                            <li><a href="https://www.youtube.com/" class="sns_icon" target="_blank"><img
+                                        src="./image/icon_youtube.png" alt="유튜브"></a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr></tr>
+            </table>
+        </div><!--footer_inner-->
+    </footer>
+
+    <!--JS파일 연결-->
+    <script src="./js/common.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".room_slide_small", {
+            loop: true,
+            spaceBetween: 10,
+            slidesPerView: 5,
+            freeMode: true,
+            watchSlidesProgress: true,
+        });
+        var swiper2 = new Swiper(".room_slide_big", {
+            loop: true,
+            spaceBetween: 10,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            thumbs: {
+                swiper: swiper,
+            },
+        });
+    </script>
+    <!--aos-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

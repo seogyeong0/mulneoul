@@ -1,0 +1,177 @@
+/*===commu_banner*/
+#commu_banner {
+    margin-top: 90px;
+    background: url(../image/community_b.jpg) center top no-repeat;
+    height: 300px;
+}
+
+#commu_banner h1 {
+    font-size: 100px;
+    line-height: 100%;
+    font-weight: 700;
+    letter-spacing: 10px;
+    text-align: center;
+    color: #fff;
+    padding: 100px 0;
+}
+
+/*TAB CSS*/
+#wrapper {
+    padding: 100px 0;
+}
+
+#wrapper .tap_box {
+    border-top: 1px solid #0083b9;
+    border-bottom: 1px solid #0083b9;
+    margin-bottom: 100px;
+}
+
+.tap_box ul.tabs {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tap_box ul.tabs li {
+    margin: 0 150px;
+    padding: 30px 0;
+    overflow: hidden;
+}
+
+.tap_box ul.tabs li a {
+    display: block;
+    padding: 0 20px;
+    font-size: 30px;
+    line-height: 100%;
+}
+
+.tap_box ul.tabs li a:hover {
+    color: #0083b9;
+}
+
+.tap_box ul.tabs li.active {
+    border-bottom: 10px solid #0083b9;
+}
+
+.tap_box ul.tabs li.active a {
+    color: #0083b9;
+}
+
+/*Tab Conent CSS*/
+.tab_container {
+    overflow: hidden;
+    clear: both;
+    width: 1320px;
+    margin: 0 auto;
+    height: 600px;
+    text-align: center;
+}
+
+.tab_content h1 {
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 400;
+    padding-bottom: 20px;
+}
+
+.tab_content h2 {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.tab_content p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.search_box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.search {
+    border: 1px solid #999;
+    outline-style: none;
+    background: #fff;
+    padding: 5px;
+}
+
+.button1 {
+    padding: 3px;
+    border: 1px solid #999;
+    background: #fff;
+    cursor: pointer;
+    outline-style: none;
+    margin-right: 30px;
+}
+
+.button1:hover {
+    background: #eee;
+}
+
+.select1 {
+    margin-right: 30px;
+    padding: 5px;
+    width: 100px;
+    border: none;
+    border-bottom: 1px solid #2e2d2c;
+    background: url(../image/icon_arrow.png) no-repeat 95% 50%;
+    border-radius: 0px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline-style: none;
+    color: #2e2d2c;
+}
+
+.tab_container table {
+    width: 100%;
+    border-top: 1px solid #2e2d2c;
+    border-bottom: 1px solid #2e2d2c;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.tab_container table tr th:nth-child(2) {
+    width: 70%;
+}
+
+.tab_container table tr th {
+    border-bottom: 1px solid #2e2d2c;
+    padding: 10px 0;
+}
+
+.tab_container table tr td {
+    height: 47px;
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tab_container table tr:last-child td {
+    border-bottom: none;
+}
+
+.tab_container table tr td:nth-child(2) {
+    text-align: left;
+}
+
+.bottom_btn {
+    text-align: right;
+}
+
+.button2 {
+    margin-top: 20px;
+    padding: 3px 10px;
+    border: 1px solid #999;
+    background: #fff;
+    cursor: pointer;
+    outline-style: none;
+    margin-right: 30px;
+}
+
+.button2:hover {
+    background: #eee;
+}
