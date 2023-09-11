@@ -581,6 +581,7 @@
     height: 750px;
     padding-top: 180px;
     padding-bottom: 90px;
+    overflow: hidden;
 }
 
 #gallery .gallery_txt {

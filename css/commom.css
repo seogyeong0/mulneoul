@@ -161,14 +161,14 @@ header {
     transition: 0.8s;
     visibility: hidden;
     opacity: 0;
-    padding-top: 200px;
     background: url(../image/menu_bg.jpg) center top no-repeat;
+    background-size: cover;
 }
 
 .menu_wrap.active {
     visibility: visible;
     opacity: 1;
-    transition: linear all 0.8;
+    transition: linear all 0.8s;
     top: 0;
     left: 0;
 }
@@ -181,13 +181,17 @@ header {
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding-top: 200px;
+    height: 100%;
 }
 
 .menu_wrap .menu_box .menu_img {
     position: absolute;
     z-index: 10;
     left: 0;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 600px;
 }
 
 .menu_wrap .menu_box .menu_img .menu_img_list {
@@ -214,12 +218,18 @@ header {
     width: 50%;
     position: absolute;
     z-index: 10;
-    top: 25px;
+    top: 50%;
     right: 0;
+    transform: translateY(-50%);
+    height: 600px;
 }
 
 .F_blue {
     color: #0083b9;
+}
+
+.menu_txt .menu_btn1 dt {
+    padding-top: 30px;
 }
 
 .menu_wrap .menu_box .menu_txt .menu_title {
