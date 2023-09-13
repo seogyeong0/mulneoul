@@ -24,6 +24,7 @@
     margin: 0 auto;
     height: 100%;
     background-color: #fff;
+    position: relative;
 }
 
 .about_inner {
@@ -32,7 +33,10 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    padding-top: 180px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #about_rest .rest1 {
