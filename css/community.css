@@ -11,7 +11,7 @@
     font-weight: 700;
     letter-spacing: 10px;
     text-align: center;
-    color: #fff;
+    color: #f6f6f6;
     padding: 100px 0;
 }
 
@@ -93,7 +93,7 @@
 }
 
 .search {
-    border: 1px solid #999;
+    border: 1px solid #d7dade;
     outline-style: none;
     background: #fff;
     padding: 5px;
@@ -101,7 +101,7 @@
 
 .button1 {
     padding: 3px;
-    border: 1px solid #999;
+    border: 1px solid #d7dade;
     background: #fff;
     cursor: pointer;
     outline-style: none;
@@ -109,7 +109,7 @@
 }
 
 .button1:hover {
-    background: #eee;
+    background: #d7dade;
 }
 
 .select1 {
@@ -165,7 +165,7 @@
 .button2 {
     margin-top: 20px;
     padding: 3px 10px;
-    border: 1px solid #999;
+    border: 1px solid #d7dade;
     background: #fff;
     cursor: pointer;
     outline-style: none;
@@ -173,5 +173,5 @@
 }
 
 .button2:hover {
-    background: #eee;
+    background: #d7dade;
 }

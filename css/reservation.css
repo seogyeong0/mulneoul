@@ -12,7 +12,7 @@
 
 .resv_b span {
     display: inline-block;
-    color: #fff;
+    color: #f6f6f6;
     font-size: 60px;
     line-height: 70px;
     font-weight: 700;
@@ -20,7 +20,7 @@
     margin-top: 45px;
     margin-left: 100px;
     padding-left: 20px;
-    border-left: 10px solid #fff;
+    border-left: 10px solid #f6f6f6;
 }
 
 #wrapper {
@@ -291,7 +291,7 @@
     text-align: center;
     cursor: pointer;
     font-weight: 700;
-    color: #fff;
+    color: #f6f6f6;
     background-color: #0083b9;
     border-radius: 10px;
     padding: 7px 30px;
