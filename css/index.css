@@ -240,7 +240,7 @@
     position: absolute;
     bottom: 100px;
     border-radius: 50%;
-    background-color: #8aceec;
+    background-color: #9fd2ee;
     pointer-events: none;
     animation: bubble 4s linear infinite;
 }
@@ -527,7 +527,7 @@
 }
 
 #special .special_box .btn_special a:hover {
-    color: #8aceec;
+    color: #9fd2ee;
     transition: all 0.8s;
 }
 

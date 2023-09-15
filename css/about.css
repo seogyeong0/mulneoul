@@ -127,6 +127,14 @@
     justify-content: center;
 }
 
+#about_logo .logo_inner .logo_box ul li>img {
+    width: 250px;
+}
+
+#about_logo .logo_inner .logo_box .more_small {
+    width: 200px;
+}
+
 #about_logo .logo_inner .logo_box ul li>img:hover {
     transform: scale(1.1);
     transition: all 0.8s;
@@ -150,12 +158,12 @@
 }
 
 #about_logo .logo_inner .logo_box .sky_box {
-    background-color: #8aceec;
+    background-color: #9fd2ee;
     margin-bottom: 30px;
 }
 
 #about_logo .logo_inner .logo_box .bagie_box {
-    background-color: #f1dec8;
+    background-color: #F5E6D3;
 }
 
 #about_logo .logo_inner .radius1 {
