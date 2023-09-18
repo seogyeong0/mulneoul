@@ -240,7 +240,7 @@
     position: absolute;
     bottom: 100px;
     border-radius: 50%;
-    background-color: #9fd2ee;
+    background-color: #9ed3ef;
     pointer-events: none;
     animation: bubble 4s linear infinite;
 }

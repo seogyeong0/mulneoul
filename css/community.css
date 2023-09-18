@@ -93,7 +93,7 @@
 }
 
 .search {
-    border: 1px solid #d7dade;
+    border: 1px solid #e2e2e7;
     outline-style: none;
     background: #fff;
     padding: 5px;
@@ -101,7 +101,7 @@
 
 .button1 {
     padding: 3px;
-    border: 1px solid #d7dade;
+    border: 1px solid #e2e2e7;
     background: #fff;
     cursor: pointer;
     outline-style: none;
@@ -109,7 +109,7 @@
 }
 
 .button1:hover {
-    background: #d7dade;
+    background: #e2e2e7;
 }
 
 .select1 {
@@ -165,7 +165,7 @@
 .button2 {
     margin-top: 20px;
     padding: 3px 10px;
-    border: 1px solid #d7dade;
+    border: 1px solid #e2e2e7;
     background: #fff;
     cursor: pointer;
     outline-style: none;
@@ -173,5 +173,5 @@
 }
 
 .button2:hover {
-    background: #d7dade;
+    background: #e2e2e7;
 }
